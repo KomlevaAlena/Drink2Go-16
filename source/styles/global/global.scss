@@ -12,14 +12,13 @@
   overflow: hidden;
 }
 
+// Viewports
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width-only: 767px;
+
 .page {
   height: 100%;
-}
-
-.main-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .main-nav {
