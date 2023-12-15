@@ -17,18 +17,31 @@
         </a>
         <ul class="main-nav__list user-list">
           <li class="user-list__item">
-            <a class="user-list__link" href="#">Войти</a>
+            <svg class="user-list__icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="images/icons/stack.svg#user"></use>
+            </svg>
+            <a class="user-list__link" href="#">
+              <span class="visually-hidden">Войти</span>
+            </a>
           </li>
           <li class="user-list__item">
-            <a class="user-list__link" href="#">Корзина</a>
+            <a class="user-list__link" href="#">
+              <svg class="user-list__icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="images/icons/stack.svg#basket"></use>
+              </svg>
+              <span class="visually-hidden">Корзина</span>
+            </a>
           </li>
         </ul>
         <button class="main-nav__toggle" type="button">
+          <svg class="site-list__icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="images/icons/stack.svg#burger"></use>
+          </svg>
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
+            <a class="site-list__link site-list__link--active" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="#">Католог</a>
