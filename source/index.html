@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
+    <link rel="preload" href="/fonts/ptsans.woff2" as="font"><!--нужно пререименовывать файлы шрифтов что были с маленькой буквы? -->
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -40,7 +41,102 @@
         </ul>
       </nav>
     </header>
-    <main class="main-container">основное содержимое</main>
-    <footer class="footer">подвал</footer>
+    <main class="main-container">
+      основное содержимое
+      <h1 class="visually-hidden">Интернет-магазин кофейных напитков Drink to Go</h1>
+      <section class="hero">
+        <!--Слайдер -->
+      </section>
+      <section class="advantages">
+        <!--приимущества -->
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
+      <section class="catalog">
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="catalog-filter__range">
+            <legend >Цена</legend><!--ползунок -->
+          </fieldset>
+          <fieldset class="catalog-filter__radio">
+            <legend >Наличие молока</legend><!--радиокнопки -->
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </fieldset>
+          <fieldset class="catalog-filter__checkbox">
+            <legend >Наличие молока</legend><!--чекбоксы -->
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </fieldset>
+          <div class="catalog-filter__button-group">
+            <button class="button catalog-filter__button" type="submit">Применить</button>
+            <button class="button catalog-filter__button button-clean" type="reset">Сбросить</button>
+          </div>
+        </form>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <a class="footer-nav__logo" href="index.html">
+        <img class="footer-nav__logo-image" src="images/medium-logo.svg" width="82" height="36" alt="Логотип «Drink to go».">
+      </a>
+      <ul class="footer-list social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">В Контакте</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">Пинтерест</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">Одноклассники</a>
+        </li>
+      </ul>
+      <ul class="footer-list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Каталог</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Доставка</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Способ оплаты</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">О нас</a>
+        </li>
+      </ul>
+      <ul class="footer-list media-list">
+        <li class="media-list__item">
+          <a class="media-list__link" href="#">Блог</a>
+        </li>
+        <li class="media-list__item">
+          <a class="media-list__link" href="#">Информация для СМИ</a>
+        </li>
+        <li class="media-list__item">
+          <a class="media-list__link" href="#">Правовая информация</a>
+        </li>
+      </ul>
+      <ul class="footer-list contact-list">
+        <li class="contact-list__item">
+          <a class="contact-list__link" href="#">Санкт-Петербург, набережная реки Карповки, дом 5</a>
+        </li>
+        <li class="contact-list__item">
+          <a class="contact-list__link" href="#">+7 (999) 999-99-99</a> <!-- это не ссылка-->
+        </li>
+      </ul>
+      <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">Разаработано в HTML Academy</a>
+    </footer>
   </body>
 </html>
