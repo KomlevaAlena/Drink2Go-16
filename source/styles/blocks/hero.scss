@@ -1,0 +1,68 @@
+.hero-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.hero-list__item {
+  &:nth-of-type(1) {
+    background-color: rgba(243, 235, 225, 1);
+  }
+
+  &:nth-of-type(2) {
+    background-color: rgba(234, 230, 252, 1);
+  }
+
+  &:nth-of-type(3) {
+    background-color: rgba(229, 230, 232, 1);
+  }
+}
+
+.hero-list__flag {
+  display: block;
+  margin: 0 auto;
+  font-family: "Montserrat-Bold", "Arial", sans-serif;
+  font-weight: 700;//почяему не жирный??
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(120, 89, 207, 1);
+  text-transform: uppercase;
+  letter-spacing: 0.48px;
+  text-align: center;
+}
+
+.hero-list__label {
+  display: block;
+  margin: 0 auto;
+  font-family: "Montserrat-Bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.72px;
+  text-align: center;
+}
+
+.hero-list__description {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-list__old-price {
+  display: block;
+  color: rgba(120, 89, 207, 1);
+  text-decoration: line-through;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.hero-list__new-price {
+  display: block;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+}
