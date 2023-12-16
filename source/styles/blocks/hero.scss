@@ -3,12 +3,17 @@
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: column;
+  align-items: center;
   margin: 0 auto;
   padding: 0;
   list-style-type: none;
 }
 
 .hero-list__item {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  width: 320px;
+
   &:nth-of-type(1) {
     background-color: rgba(243, 235, 225, 1);
   }
@@ -33,6 +38,7 @@
   text-transform: uppercase;
   letter-spacing: 0.48px;
   text-align: center;
+  padding-top: 10px;
 }
 
 .hero-list__label {
@@ -44,12 +50,27 @@
   line-height: 48px;
   letter-spacing: 0.72px;
   text-align: center;
+  width: 280px;
+  padding-top: 4px;
 }
 
 .hero-list__description {
   display: block;
   margin: 0 auto;
   text-align: center;
+  width: 280px;
+  padding-top: 10px;
+}
+
+.hero-list__price-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 230px;
 }
 
 .hero-list__old-price {
@@ -58,6 +79,7 @@
   text-decoration: line-through;
   font-size: 16px;
   line-height: 32px;
+  padding-left: 25px;
 }
 
 .hero-list__new-price {
@@ -65,4 +87,14 @@
   font-size: 20px;
   line-height: 32px;
   font-weight: 600;
+  padding-left: 6px;
+}
+
+.hero-list__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.hero-list__button {
+  text-transform: none;
 }
