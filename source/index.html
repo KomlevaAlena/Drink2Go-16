@@ -59,15 +59,67 @@
       основное содержимое
       <h1 class="visually-hidden">Интернет-магазин кофейных напитков Drink to Go</h1>
       <section class="hero">
+        <h2 class="visually-hidden">Новинки</h2>
         <!--Слайдер -->
+        <ul class="hero-list">
+          <li class="hero-list__item">
+            <span class="hero-list__flag">Новинка!</span>
+            <h3 class="hero-list__label">Декаф Флэт Уайт</h3>
+            <p class="hero-list__description">Свежесваренный кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком — то, что нужно
+              для расслабления после тяжёлого рабочего дня
+            </p>
+            <span class="hero-list__old-price">295₽</span>
+            <span class="hero-list__new-price">225₽</span>
+            <a class="hero-list__button button" href="#">Заказать</a>
+          </li>
+          <li class="hero-list__item">
+            <li class="hero-list__item">
+              <span class="hero-list__flag">Новинка!</span>
+              <h3 class="hero-list__label">Лавандовый Латте</h3>
+              <p class="hero-list__description">Невероятное сочетание перуанской высокогорной арабики
+                с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор
+              </p>
+              <span class="hero-list__old-price">295₽</span>
+              <span class="hero-list__new-price">265₽</span>
+              <a class="hero-list__button button" href="#">Заказать</a>
+          </li>
+          <li class="hero-list__item">
+            <li class="hero-list__item">
+              <span class="hero-list__flag">Новинка!</span>
+              <h3 class="hero-list__label">Тройной Эспрессо</h3>
+              <p class="hero-list__description">Мощнее укола адреналина, чернее самой тёмной ночи,
+                этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость
+              </p>
+              <span class="hero-list__old-price">395₽</span>
+              <span class="hero-list__new-price">375₽</span>
+              <a class="hero-list__button button" href="#">Заказать</a>
+          </li>
+        </ul>
       </section>
       <section class="advantages">
+        <span class="advantages_flag">Преимущества</span>
+        <h2 class="advantages-title">Главные причины выбрать Drink2Go</h2>
         <!--приимущества -->
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <h3 class="advantages-item__title">Скорость</h3><!--дополнительное так в бэме пишется? -->
+            <p class="advantages-description">Готовый напиток всегда под рукой — просто открой банку</p>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-item__title">Удобство</h3>
+            <p class="advantages-description">Легко помещается и в карман,
+              и в маленькую сумочку</p>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-item__title">Бодрость</h3>
+            <p class="advantages-description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-item__title">Экологичность</h3>
+            <p class="advantages-description">Вся упаковка сделана
+              из перерабатываемых материалов</p>
+          </li>
         </ul>
       </section>
       <section class="catalog">
@@ -75,25 +127,79 @@
         <p>Каталог</p>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="catalog-filter__range">
-            <legend >Цена</legend><!--ползунок -->
+            <legend class="catalog-filter__title">Цена</legend><!--ползунок -->
           </fieldset>
           <fieldset class="catalog-filter__radio">
-            <legend >Наличие молока</legend><!--радиокнопки -->
-            <ul>
-              <li>Неважно</li>
-              <li>Только животное</li>
-              <li>Только растительное</li>
-              <li>Без молока</li>
+            <legend class="catalog-filter__title">Наличие молока</legend><!--радиокнопки -->
+            <ul class="catalog-filter__list catalog-filter__list--radio">
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__control">
+                  <input class="catalog-filter__input visually-hidden" type="radio" name="memory-group" value="Неважно">
+                  <span class="catalog-filter__mark"></span><!--для создания маркера-оформительного -->
+                  <span class="catalog-filter__label">Неважно</span>
+                </label>
+              </li>
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__control">
+                  <input class="catalog-filter__input visually-hidden" type="radio" name="memory-group" value="Только животное">
+                  <span class="catalog-filter__mark"></span><!--для создания маркера-оформительного -->
+                  <span class="catalog-filter__label">Только животное</span>
+                </label>
+              </li>
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__control">
+                  <input class="catalog-filter__input visually-hidden" type="radio" name="memory-group" value="Только растительное">
+                  <span class="catalog-filter__mark"></span><!--для создания маркера-оформительного -->
+                  <span class="catalog-filter__label">Только растительное</span>
+                </label>
+              </li>
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__control">
+                  <input class="catalog-filter__input visually-hidden" type="radio" name="memory-group" value="Без молока">
+                  <span class="catalog-filter__mark"></span><!--для создания маркера-оформительного -->
+                  <span class="catalog-filter__label">Без молока</span>
+                </label>
+              </li>
             </ul>
           </fieldset>
           <fieldset class="catalog-filter__checkbox">
-            <legend >Наличие молока</legend><!--чекбоксы   -->
-            <ul>
-              <li>Бразилия</li>
-              <li>Эфиопия</li>
-              <li>Колумбия</li>
-              <li>Коста-Рика</li>
-              <li>Перу</li>
+            <legend class="catalog-filter__title">Наличие молока</legend><!--чекбоксы   -->
+            <ul class="catalog-filter__list catalog-filter__list--checkbox">
+              <li>
+                <label class="catalog-filter__control">
+                  <input class="catalog-filter__input visually-hidden" type="checkbox" value="Бразилия" checked>
+                  <span class="catalog-filter__mark"></span>
+                  <span class="catalog-filter__label">Бразилия</span>
+                </label>
+              </li>
+              <li class="catalog-filter__item">
+                <label class="form-group__control">
+                  <input class="catalog-filter__input visually-hidden" type="checkbox" value="Эфиопия" >
+                  <span class="catalog-filter__mark"></span>
+                  <span class="catalog-filter__label">Эфиопия</span>
+                </label>
+              </li>
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__control">
+                  <input class="catalog-filter__input visually-hidden" type="checkbox" value="Колумбия">
+                  <span class="catalog-filter__mark"></span>
+                  <span class="catalog-filter__label">Колумбия</span>
+                </label>
+              </li>
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__control">
+                  <input class="catalog-filter__input visually-hidden" type="checkbox" value="Коста-Рика">
+                  <span class="catalog-filter__mark"></span>
+                  <span class="catalog-filter__label">Коста-Рика</span>
+                </label>
+              </li>
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__control">
+                  <input class="catalog-filter__input visually-hidden" type="checkbox" value="Перу">
+                  <span class="catalog-filter__mark"></span>
+                  <span class="catalog-filter__label">Перу</span>
+                </label>
+              </li>
             </ul>
           </fieldset>
           <div class="catalog-filter__button-group">

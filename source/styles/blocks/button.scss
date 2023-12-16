@@ -3,3 +3,7 @@
   padding: 22px;
   background-color: transparent;
 }
+
+.button {
+  @include button;
+}
