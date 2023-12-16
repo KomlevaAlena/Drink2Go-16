@@ -28,16 +28,7 @@
 }
 
 .hero-list__flag {
-  display: block;
-  margin: 0 auto;
-  font-family: "Montserrat-Bold", "Arial", sans-serif;
-  font-weight: 700;//почяему не жирный??
-  font-size: 12px;
-  line-height: 16px;
-  color: rgba(120, 89, 207, 1);
-  text-transform: uppercase;
-  letter-spacing: 0.48px;
-  text-align: center;
+  @include flag;
   padding-top: 10px;
 }
 
