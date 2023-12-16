@@ -9,6 +9,7 @@
     <script src="scripts/index.js" defer></script>
     <link rel="preload" href="/fonts/Montserrat-Regular.woff2" as="font"><!--нужно пререименовывать файлы шрифтов что были с маленькой буквы? -->
     <link rel="preload" href="/fonts/Montserrat-Bold.woff2" as="font"> <!--не подключился-->
+    <link rel="stylesheet" href="https://unpkg.com/nouislider@14.6.3/distribute/nouislider.min.css"><!--nouislider-->
   </head>
   <body class="page-body">
     <header class="main-header">
@@ -146,8 +147,13 @@
         <span class="catalog-flag">Каталог</span>
         <h2 class="catalog-title">Каталог кофейных напитков</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="catalog-filter__range">
-            <legend class="catalog-filter__title">Цена</legend><!--ползунок -->
+          <fieldset class="catalog-filter__range range">
+            <legend class="range-title">Цена</legend><!--ползунок -->
+            <div class="range-slider" id="slider"></div>
+            <div class="range-field">
+              <input class="range-value__min" type="text" id="min">
+              <input class="range-value__max" type="text" id="max">
+            </div>
           </fieldset>
           <fieldset class="catalog-filter__radio">
             <legend class="catalog-filter__title">Наличие молока</legend><!--радиокнопки -->
@@ -364,5 +370,7 @@
       </ul>
       <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">Разаработано в HTML Academy</a>
     </footer>
+
+    <script src="https://unpkg.com/nouislider@14.6.3/distribute/nouislider.min.js"></script>
   </body>
 </html>
