@@ -9,6 +9,7 @@
 
 .catalog-select__title {
   display: block;
+  margin: 0;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
@@ -16,6 +17,9 @@
 
 .catalog-select {
   display: block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
   width: 145px;
   padding: 4px 10px;
   padding-right: 17px;
@@ -30,4 +34,22 @@
   background-repeat: no-repeat;
   background-position: right 10px center;
   appearance: none;
+
+  &:hover {
+    background-color: rgba(240, 235, 255, 1);
+    outline: none;
+  }
+
+  &:focus {
+    background-color: rgba(240, 235, 255, 1);
+    outline: none;
+  }
+
+  &:active {
+    background-image: url("/images/select-arrow-active.svg");
+    background-size: 10px 6px;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    outline: none;
+  }
 }

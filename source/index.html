@@ -246,13 +246,19 @@
           <h3 class="visually-hidden">Товары.</h3>
           <ul class="product-list">
             <li class="product-card">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="images/coffee-can-1-desktop@1x.webp 1x, images/coffee-can-1-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="images/coffee-can-1-tablet@1x.webp 1x, images/coffee-can-1-tablet@2x.webp 2x">
+                <img class="product-card__image" src="images/coffee-can-1-mobile@1x.webp" srcset="images/coffee-can-1-mobile@2x.webp"  alt="Банка кофе Декаф Флэт Уайт."  width="130" height="188">
+              </picture>
               <a class="product-link" href="#">
-                <img class="product-image" src="#" alt="Декаф Флэт Уайт." width="130" height="188">
                 <h3 class="product-title">Декаф Флэт Уайт</h3>
               </a>
               <span class="product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</span>
-              <span class="product-price">225₽</span>
-              <a class="product-card-button button button-favorites" href="#">В корзину</a>
+              <div class="product-price__wrapper">
+                <span class="product-price">225₽</span>
+                <a class="product-card-button button" href="#">В корзину</a>
+              </div>
             </li>
             <li class="product-card">
               <a class="product-link" href="#">
@@ -260,8 +266,21 @@
                 <h3 class="product-title">Декаф Флэт Уайт</h3>
               </a>
               <span class="product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</span>
-              <span class="product-price">225₽</span>
-              <a class="product-card-button button button-favorites" href="#">В корзину</a>
+              <div class="product-price__wrapper">
+                <span class="product-price">225₽</span>
+                <a class="product-card-button button" href="#">В корзину</a>
+              </div>
+            </li>
+            <li class="product-card">
+              <div class="product-price__wrapper">
+                <span class="product-price">225₽</span>
+                <a class="product-card-button button" href="#">В корзину</a>
+              </div>
+              <span class="product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</span>
+              <div class="product-price__wrapper">
+                <span class="product-price">225₽</span>
+                <a class="product-card-button button" href="#">В корзину</a>
+              </div>
             </li>
             <li class="product-card">
               <a class="product-link" href="#">
@@ -269,8 +288,10 @@
                 <h3 class="product-title">Декаф Флэт Уайт</h3>
               </a>
               <span class="product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</span>
-              <span class="product-price">225₽</span>
-              <a class="product-card-button button button-favorites" href="#">В корзину</a>
+              <div class="product-price__wrapper">
+                <span class="product-price">225₽</span>
+                <a class="product-card-button button" href="#">В корзину</a>
+              </div>
             </li>
             <li class="product-card">
               <a class="product-link" href="#">
@@ -278,8 +299,10 @@
                 <h3 class="product-title">Декаф Флэт Уайт</h3>
               </a>
               <span class="product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</span>
-              <span class="product-price">225₽</span>
-              <a class="product-card-button button button-favorites" href="#">В корзину</a>
+              <div class="product-price__wrapper">
+                <span class="product-price">225₽</span>
+                <a class="product-card-button button" href="#">В корзину</a>
+              </div>
             </li>
             <li class="product-card">
               <a class="product-link" href="#">
@@ -287,17 +310,10 @@
                 <h3 class="product-title">Декаф Флэт Уайт</h3>
               </a>
               <span class="product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</span>
-              <span class="product-price">225₽</span>
-              <a class="product-card-button button button-favorites" href="#">В корзину</a>
-            </li>
-            <li class="product-card">
-              <a class="product-link" href="#">
-                <img class="product-image" src="#" alt="Декаф Флэт Уайт." width="130" height="188">
-                <h3 class="product-title">Декаф Флэт Уайт</h3>
-              </a>
-              <span class="product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</span>
-              <span class="product-price">225₽</span>
-              <a class="product-card-button button button-favorites" href="#">В корзину</a>
+              <div class="product-price__wrapper">
+                <span class="product-price">225₽</span>
+                <a class="product-card-button button" href="#">В корзину</a>
+              </div>
             </li>
           </ul>
         </div>
