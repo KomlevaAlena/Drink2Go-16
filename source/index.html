@@ -152,8 +152,8 @@
             <legend class="range-title">Цена</legend><!--ползунок -->
             <div class="range-slider" id="slider"></div>
             <div class="range-field">
-              <input class="range-value__min" type="text" id="min">
-              <input class="range-value__max" type="text" id="max">
+              <input class="range-value__min" type="text" id="min" placeholder="0">
+              <input class="range-value__max" type="text" id="max" placeholder="900">
             </div>
           </fieldset>
           <fieldset class="catalog-filter__radio">
@@ -196,35 +196,35 @@
                 <label class="catalog-filter__control">
                   <input class="catalog-filter__input visually-hidden" type="checkbox" value="Бразилия" checked>
                   <span class="catalog-filter__mark"></span>
-                  <span class="catalog-filter__label">Бразилия</span>
-                </label>
-              </li>
-              <li class="catalog-filter__item">
-                <label class="form-group__control">
-                  <input class="catalog-filter__input visually-hidden" type="checkbox" value="Эфиопия" >
-                  <span class="catalog-filter__mark"></span>
-                  <span class="catalog-filter__label">Эфиопия</span>
+                  <span class="catalog-filter__label catalog-filter__label--checkbox">Бразилия</span>
                 </label>
               </li>
               <li class="catalog-filter__item">
                 <label class="catalog-filter__control">
                   <input class="catalog-filter__input visually-hidden" type="checkbox" value="Колумбия">
                   <span class="catalog-filter__mark"></span>
-                  <span class="catalog-filter__label">Колумбия</span>
+                  <span class="catalog-filter__label catalog-filter__label--checkbox">Эфиопия</span>
+                </label>
+              </li>
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__control">
+                  <input class="catalog-filter__input visually-hidden" type="checkbox" value="Колумбия">
+                  <span class="catalog-filter__mark"></span>
+                  <span class="catalog-filter__label catalog-filter__label--checkbox">Колумбия</span>
                 </label>
               </li>
               <li class="catalog-filter__item">
                 <label class="catalog-filter__control">
                   <input class="catalog-filter__input visually-hidden" type="checkbox" value="Коста-Рика">
                   <span class="catalog-filter__mark"></span>
-                  <span class="catalog-filter__label">Коста-Рика</span>
+                  <span class="catalog-filter__label catalog-filter__label--checkbox">Коста-Рика</span>
                 </label>
               </li>
               <li class="catalog-filter__item">
                 <label class="catalog-filter__control">
                   <input class="catalog-filter__input visually-hidden" type="checkbox" value="Перу">
                   <span class="catalog-filter__mark"></span>
-                  <span class="catalog-filter__label">Перу</span>
+                  <span class="catalog-filter__label catalog-filter__label--checkbox">Перу</span>
                 </label>
               </li>
             </ul>
@@ -234,11 +234,14 @@
             <button class="button catalog-filter__button button-clean" type="reset">Сбросить</button>
           </div>
         </form>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="default">По умолчанию</option>
-          <option value="popular"> Сначала популярное</option>
-          <option value="expensive">Сначала дорогое</option>
-        </select>
+        <div class="catalog-select__wrapper">
+          <h3 class="catalog-select__title">Сортировка:</h3>
+          <select class="catalog-select" aria-label="Сортировка">
+            <option value="default" class="catalog-select__text">По умолчанию</option>
+            <option value="popular" class="catalog-select__text"> Сначала популярное</option>
+            <option value="expensive" class="catalog-select__text">Сначала дорогое</option>
+          </select>
+        </div>
         <div class="product-wrapper">
           <h3 class="visually-hidden">Товары.</h3>
           <ul class="product-list">

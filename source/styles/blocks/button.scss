@@ -7,3 +7,8 @@
 .button {
   @include button;
 }
+
+.button-clean {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(120, 89, 207, 1);
+}

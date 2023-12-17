@@ -1,0 +1,33 @@
+.catalog-select__wrapper {
+  margin: 0 auto;
+  width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.catalog-select__title {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.catalog-select {
+  display: block;
+  width: 145px;
+  padding: 4px 10px;
+  padding-right: 17px;
+  font: inherit;
+  font-weight: 600;
+  background-color: transparent;
+  color: rgba(120, 89, 207, 1);
+  text-transform: lowercase;
+  border: none;
+  background-image: url("/images/select-arrow.svg");
+  background-size: 10px 6px;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  appearance: none;
+}
