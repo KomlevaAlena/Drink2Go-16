@@ -1,0 +1,108 @@
+.catalog-filter__control {
+  position: relative;
+  display: block;
+  padding: 0;
+}
+
+.catalog-filter__input[type="radio"] + .catalog-filter__mark {
+  border-radius: 50%;
+  position: absolute;
+  top: 18px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border: 2px solid rgba(189, 189, 189, 1);
+  background-color: rgba(255, 255, 255, 1);
+
+  &:checked + .catalog-filter__mark::before {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 18px;
+    height: 18px;
+    background-color: rgba(120, 89, 207, 1);
+    border-radius: 50%;
+    content: "";//работает, но странно
+  }
+
+  &:hover {
+    border-color: rgba(120, 89, 207, 1);
+
+    &::before {
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: rgba(120, 89, 207, 0.25);
+      content: "";
+    }
+  }
+
+  &:focus {
+    border-color: rgba(120, 89, 207, 1);
+
+    &::before {
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: rgba(120, 89, 207, 0.25);
+      content: "";
+    }
+  }
+
+  &:active {
+    border-color: rgba(120, 89, 207, 1);
+
+    &::before {
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: rgba(120, 89, 207, 1);
+      content: "";
+    }
+  }
+
+  &:disabled {
+    background-color: rgba(255, 255, 255, 1);
+    border-color: rgba(226, 226, 226, 1);
+
+    &:checked + .catalog-filter__mark::before {
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 18px;
+      height: 18px;
+      background-color: rgba(226, 226, 226, 1);
+      border-radius: 50%;
+      content: "";//работает?
+    }
+  }
+}
+
+.catalog-filter__list--radio {
+  margin: 0 auto;
+  width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0;
+  list-style-type: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.catalog-filter__label--radio {
+  display: block;
+  padding-left: 34px;
+  padding-top: 20px;
+}
