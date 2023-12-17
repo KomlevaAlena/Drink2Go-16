@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: column;
+  background-color: rgba(248, 248, 248, 1);
 }
 
 .catalog-flag {
@@ -15,4 +16,10 @@
 .catalog-title {
   @include title_h2;
   padding-top: 4px;
+}
+
+.catalog-filter__range {
+  margin: 0;
+  padding: 0;
+  border: none;
 }

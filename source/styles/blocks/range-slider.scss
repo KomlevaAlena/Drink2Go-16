@@ -1,0 +1,52 @@
+.noUi-connects {
+  width: 280px;
+  height: 2px;
+}
+
+.noUi-connect {
+  background: rgba(144, 112, 236, 1);
+}
+
+.range-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.range-field {
+  margin: 0 auto;
+  width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 24px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 2px;
+    background-color: rgba(189, 189, 189, 1);
+    top: 44px;
+    left: 136px;
+    z-index: 1;
+    content: "";
+  }
+}
+
+.range-value {
+  &__min {
+    @include filed;
+    margin-right: auto;
+    width: 98px;
+    color: rgba(189, 189, 189, 1);
+  }
+
+  &__max {
+    @include filed;
+    margin-left: auto;
+    width: 98px;
+  }
+}

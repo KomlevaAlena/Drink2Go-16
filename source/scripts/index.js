@@ -30,19 +30,17 @@ const rangeSliderInit = () => {
 
   sliderElement.noUiSlider.on('update', function (values, handle) { // при изменений положения элементов управления слайдера изменяем соответствующие значения
     inputs[handle].value = parseInt(values[handle]);
-  }
-  );
-
-  inputMin.addEventListener('change', function () { // при изменении меньшего значения в input - меняем положение соответствующего элемента управления
-    sliderElement.noUiSlider.set([this.value, null]);
   });
 
-  inputMax.addEventListener('change', function () { // при изменении большего значения в input - меняем положение соответствующего элемента управления
+  inputMin.addEventListener('change', function () {
+  });
+
+  inputMax.addEventListener('change', function () {
     sliderElement.noUiSlider.set([null, this.value]);
   });
 };
 const init = () => {
-  rangeSliderInit(); // запускаем функцию инициализации слайдера
+  rangeSliderInit();
 };
 
 window.addEventListener('DOMContentLoaded', init);
