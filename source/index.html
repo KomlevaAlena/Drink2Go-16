@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="img/favicon_32.png">
     <script src="scripts/index.js" defer></script>
-    <link rel="preload" href="/fonts/Montserrat-Regular.woff2" as="font"><!--нужно пререименовывать файлы шрифтов что были с маленькой буквы? -->
-    <link rel="preload" href="/fonts/Montserrat-Bold.woff2" as="font"> <!--не подключился-->
-    <link rel="stylesheet" href="https://unpkg.com/nouislider@14.6.3/distribute/nouislider.min.css"><!--nouislider-->
-    <link rel="stylesheet" href="source\vendor\nouislider\nouislider.css">
+    <link rel="preload" href="/fonts/Montserrat-Regular.woff2" as="font">
+    <link rel="preload" href="/fonts/Montserrat-Bold.woff2" as="font">
+    <!--nouislider-->
+    <link rel="stylesheet" href="vendor/nouislider/nouislider.css">
   </head>
   <body class="page-body">
     <header class="main-header">
@@ -246,12 +246,12 @@
           <h3 class="visually-hidden">Товары.</h3>
           <ul class="product-list">
             <li class="product-card">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="images/coffee-can-1-desktop@1x.webp 1x, images/coffee-can-1-desktop@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="images/coffee-can-1-tablet@1x.webp 1x, images/coffee-can-1-tablet@2x.webp 2x">
-                <img class="product-card__image" src="images/coffee-can-1-mobile@1x.webp" srcset="images/coffee-can-1-mobile@2x.webp"  alt="Банка кофе Декаф Флэт Уайт."  width="130" height="188">
-              </picture>
               <a class="product-link" href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/coffee-can-1-desktop@1x.webp 1x, images/coffee-can-1-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="images/coffee-can-1-tablet@1x.webp 1x, images/coffee-can-1-tablet@2x.webp 2x">
+                  <img class="product-card__image" src="images/coffee-can-1-mobile@1x.webp" srcset="images/coffee-can-1-mobile@2x.webp"  alt="Банка кофе Декаф Флэт Уайт."  width="130" height="188">
+                </picture>
                 <h3 class="product-title">Декаф Флэт Уайт</h3>
               </a>
               <span class="product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</span>
@@ -262,29 +262,11 @@
             </li>
             <li class="product-card">
               <a class="product-link" href="#">
-                <img class="product-image" src="#" alt="Декаф Флэт Уайт." width="130" height="188">
-                <h3 class="product-title">Декаф Флэт Уайт</h3>
-              </a>
-              <span class="product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</span>
-              <div class="product-price__wrapper">
-                <span class="product-price">225₽</span>
-                <a class="product-card-button button" href="#">В корзину</a>
-              </div>
-            </li>
-            <li class="product-card">
-              <div class="product-price__wrapper">
-                <span class="product-price">225₽</span>
-                <a class="product-card-button button" href="#">В корзину</a>
-              </div>
-              <span class="product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</span>
-              <div class="product-price__wrapper">
-                <span class="product-price">225₽</span>
-                <a class="product-card-button button" href="#">В корзину</a>
-              </div>
-            </li>
-            <li class="product-card">
-              <a class="product-link" href="#">
-                <img class="product-image" src="#" alt="Декаф Флэт Уайт." width="130" height="188">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/coffee-can-2-desktop@1x.webp 1x, images/coffee-can-2-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="images/coffee-can-2-tablet@1x.webp 1x, images/coffee-can-2-tablet@2x.webp 2x">
+                  <img class="product-card__image" src="images/coffee-can-2-mobile@1x.webp" srcset="images/coffee-can-2-mobile@2x.webp"  alt="Банка кофе Декаф Флэт Уайт."  width="130" height="188">
+                </picture>
                 <h3 class="product-title">Декаф Флэт Уайт</h3>
               </a>
               <span class="product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</span>
@@ -295,7 +277,25 @@
             </li>
             <li class="product-card">
               <a class="product-link" href="#">
-                <img class="product-image" src="#" alt="Декаф Флэт Уайт." width="130" height="188">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/coffee-can-3-desktop@1x.webp 1x, images/coffee-can-3-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="images/coffee-can-3-tablet@1x.webp 1x, images/coffee-can-3-tablet@2x.webp 2x">
+                  <img class="product-card__image" src="images/coffee-can-3-mobile@1x.webp" srcset="images/coffee-can-3-mobile@2x.webp"  alt="Банка кофе Декаф Флэт Уайт."  width="130" height="188">
+                </picture>
+                <h3 class="product-title">Декаф Флэт Уайт</h3>
+              </a>
+              <div class="product-price__wrapper">
+                <span class="product-price">225₽</span>
+                <a class="product-card-button button" href="#">В корзину</a>
+              </div>
+            </li>
+            <li class="product-card">
+              <a class="product-link" href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/coffee-can-4-desktop@1x.webp 1x, images/coffee-can-4-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="images/coffee-can-4-tablet@1x.webp 1x, images/coffee-can-4-tablet@2x.webp 2x">
+                  <img class="product-card__image" src="images/coffee-can-4-mobile@1x.webp" srcset="images/coffee-can-4-mobile@2x.webp"  alt="Банка кофе Декаф Флэт Уайт."  width="130" height="188">
+                </picture>
                 <h3 class="product-title">Декаф Флэт Уайт</h3>
               </a>
               <span class="product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</span>
@@ -306,7 +306,26 @@
             </li>
             <li class="product-card">
               <a class="product-link" href="#">
-                <img class="product-image" src="#" alt="Декаф Флэт Уайт." width="130" height="188">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/coffee-can-5-desktop@1x.webp 1x, images/coffee-can-5-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="images/coffee-can-5-tablet@1x.webp 1x, images/coffee-can-5-tablet@2x.webp 2x">
+                  <img class="product-card__image" src="images/coffee-can-5-mobile@1x.webp" srcset="images/coffee-can-5-mobile@2x.webp"  alt="Банка кофе Декаф Флэт Уайт."  width="130" height="188">
+                </picture>
+                <h3 class="product-title">Декаф Флэт Уайт</h3>
+              </a>
+              <span class="product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</span>
+              <div class="product-price__wrapper">
+                <span class="product-price">225₽</span>
+                <a class="product-card-button button" href="#">В корзину</a>
+              </div>
+            </li>
+            <li class="product-card">
+              <a class="product-link" href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/coffee-can-6-desktop@1x.webp 1x, images/coffee-can-6-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="images/coffee-can-6-tablet@1x.webp 1x, images/coffee-can-6-tablet@2x.webp 2x">
+                  <img class="product-card__image" src="images/coffee-can-6-mobile@1x.webp" srcset="images/coffee-can-6-mobile@2x.webp"  alt="Банка кофе Декаф Флэт Уайт."  width="130" height="188">
+                </picture>
                 <h3 class="product-title">Декаф Флэт Уайт</h3>
               </a>
               <span class="product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</span>
