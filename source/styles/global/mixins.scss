@@ -104,3 +104,19 @@
     outline: 2px solid rgba(226, 226, 226, 1);
   }
 }
+
+@mixin list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  font-family: "Montserrat-Regular", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 1);
+  background-color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+}

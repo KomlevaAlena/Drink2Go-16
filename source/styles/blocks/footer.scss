@@ -1,0 +1,21 @@
+.footer {
+  margin: 0 auto;
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 1);
+
+  &-list {
+    @include list;
+    width: 320px;
+    border-bottom: 1px solid rgba(240, 235, 255, 1);
+
+    .site-list__item {
+      margin: 0 auto;
+      border: none;
+      width: 280px;
+    }
+  }
+}
+

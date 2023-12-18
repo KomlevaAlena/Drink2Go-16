@@ -1,0 +1,19 @@
+.social-list {
+  flex-direction: row;
+  padding-top: 22px;
+  padding-bottom: 22px;
+
+  &__logo {
+    display: block;
+    margin-left: 20px;
+    margin-right: 38px;
+
+    &-image {
+      display: block;
+    }
+  }
+
+  &__link {
+    display: block;
+  }
+}
