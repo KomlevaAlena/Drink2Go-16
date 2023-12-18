@@ -30,6 +30,11 @@
   }
 }
 
+@mixin button-clean {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(120, 89, 207, 1);
+}
+
 @mixin flag {
   display: block;
   margin: 0 auto;

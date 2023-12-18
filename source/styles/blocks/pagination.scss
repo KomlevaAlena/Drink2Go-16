@@ -1,0 +1,39 @@
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  width: 280px;
+  list-style-type: none;
+  padding-top: 40px;
+
+  &-link {
+    @include button;
+    @include button-clean;
+    padding: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    width: 24px;
+  }
+
+  &-link__before {
+    background-image: url("/images/arrow-left.svg");
+    background-size: 10px 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px;
+  }
+
+  &-link__after {
+    background-image: url("/images/arrow-right.svg");
+    background-size: 10px 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px;
+  }
+}
+
+.pagination-word {
+  display: none;
+}
