@@ -1,0 +1,29 @@
+.map {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 44px;
+
+  &::after {
+    content: "";
+    cursor: pointer;
+    position: absolute;
+    background-image: url("/images/map-pin.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    top: 235px;
+    left: 135px;
+    z-index: 3;
+    height: 38px;
+    width: 50px;
+  }
+}
+
+.map-image {
+  display: block;
+  z-index: 1;
+  cursor: pointer;
+}

@@ -11,6 +11,8 @@
   &-link {
     @include button;
     @include button-clean;
+    margin: 0 auto;
+    text-align: center;
     padding: 8px;
     font-size: 16px;
     line-height: 24px;
@@ -22,7 +24,7 @@
     background-size: 10px 10px;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 15px;
+    padding: 20px 10px;
   }
 
   &-link__after {
@@ -30,7 +32,32 @@
     background-size: 10px 10px;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 15px;
+    padding: 20px 10px;
+  }
+
+  &-link_active {
+    background-color: transparent;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 600;
+  }
+
+  &-link:hover {
+    background-color: rgba(144, 112, 236, 1);
+  }
+
+  &-link:focus {
+    background-color: rgba(144, 112, 236, 1);
+    outline: none;
+    border: 0;
+  }
+
+  &-link:active {
+    background-color: rgba(89, 60, 172, 1);
+  }
+
+  &-link:disabled {
+    background-color: rgba(226, 226, 226, 1);
+    color: rgba(255, 255, 255, 1);
   }
 }
 
