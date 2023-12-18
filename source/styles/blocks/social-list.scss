@@ -1,6 +1,5 @@
 .social-list {
   flex-direction: row;
-  padding-top: 22px;
   padding-bottom: 22px;
 
   &__logo {
@@ -16,4 +15,15 @@
   &__link {
     display: block;
   }
+}
+
+.social__icon-pinterest {
+  display: block;
+  padding-top: 10px;
+}
+
+.social__icon-ok {
+  display: block;
+  padding-top: 10px;
+  margin-right: 30px;
 }

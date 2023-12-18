@@ -1,0 +1,44 @@
+.footer__copyright {
+  position: relative;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  width: 280px;
+  margin: 0 auto;
+  text-decoration: none;
+  text-transform: none;
+  text-align: left;
+  color: rgba(189, 189, 189, 1);
+
+  &:last-of-type {
+    padding-bottom: 20px;
+  }
+
+  &:hover {
+    color: rgba(120, 89, 207, 1);
+  }
+
+  &:focus {
+    color: rgba(120, 89, 207, 1);
+  }
+
+  &:active {
+    color: rgba(89, 60, 172, 1);
+  }
+
+  &:disabled {
+    color: rgba(226, 226, 226, 1);
+  }
+}
+
+.copyright__icon {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 20px;
+  width: 12px;
+  height: 16px;
+  color: rgba(189, 189, 189, 1);
+}
+//невидно иконку юз ноль ноль
