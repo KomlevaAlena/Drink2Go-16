@@ -1,10 +1,31 @@
+.range-slider {
+  margin-top: 20px;
+}
+
+.noUi-target {
+  border: none;
+  background-color: rgba(226, 226, 226, 1);
+}
+
 .noUi-connects {
   width: 280px;
+  height: 2px;
+  background: rgba(189, 189, 189, 1);
+}
+
+.noUi-horizontal {
   height: 2px;
 }
 
 .noUi-connect {
   background: rgba(144, 112, 236, 1);
+}
+
+.noUi-handle-lower {
+  width: 22px;
+  height: 22px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1ps solid rgba(144, 112, 236, 1);
 }
 
 .range-title {
