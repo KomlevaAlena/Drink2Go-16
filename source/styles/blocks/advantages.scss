@@ -83,3 +83,38 @@
   text-align: center;
   padding-top: 4px;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    width: 768px;
+  }
+
+  .advantages-title {
+    width: 738px;
+  }
+
+  .advantages-list {
+    width: 728px;
+    flex-direction: row;
+  }
+
+  .advantages-item {
+    width: 267px;
+    padding-top: 0;
+    padding-left: 20px;
+    align-items: start;
+  }
+
+  .advantages-item__title {
+    text-align: start;
+    padding-top: 0;
+    padding-left: 70px;
+    background-size: 50px 56px;
+    background-position: left 50%;
+  }
+
+  .advantages-description {
+    text-align: start;
+    padding-left: 70px;
+  }
+}

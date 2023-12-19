@@ -74,6 +74,11 @@
   line-height: 36px;
   text-align: center;
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+  }
 }
 
 @mixin title_h3 {
