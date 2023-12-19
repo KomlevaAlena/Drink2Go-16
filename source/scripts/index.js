@@ -6,14 +6,14 @@ const rangeSliderInit = () => {
 
   const inputs = [inputMin, inputMax];
 
-  noUiSlider.create(sliderElement, { // инициализируем слайдер
-    start: [0, 900], // устанавливаем начальные значения
-    connect: true, // указываем что нужно показывать выбранный диапазон
-    range: { // устанавливаем минимальное и максимальное значения
+  noUiSlider.create(sliderElement, {
+    start: [0, 900],
+    connect: true,
+    range: {
       'min': 0,
       'max': 1000
     },
-    step: 1, // шаг изменения значений
+    step: 1,
     format: {
       to: function (value) {
         if (Number.isInteger(value)) {
@@ -28,13 +28,12 @@ const rangeSliderInit = () => {
   }
   );
 
-  sliderElement.noUiSlider.on('update', function (values, handle) { // при изменений положения элементов управления слайдера изменяем соответствующие значения
-    inputs[handle].value = parseInt(values[handle]);
+  sliderElement.noUiSlider.on('update', (values, handle) => {
+    inputs[handle].value = parseInt(values[handle], 10);
   });
-
   inputMin.addEventListener('change', function () {
+    sliderElement.noUiSlider.set([this.value, null]);
   });
-
   inputMax.addEventListener('change', function () {
     sliderElement.noUiSlider.set([null, this.value]);
   });
