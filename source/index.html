@@ -16,14 +16,14 @@
     <header class="main-header">
       <nav class="main-nav">
         <a class="main-nav__logo" href="index.html">
-          <img class="main-nav__logo-image" src="images\logo-simbol.svg" width="32" height="36" alt="Логотип «Drink to go».">
+          <img class="main-nav__logo-image" src="images/logo-simbol.svg" width="32" height="36" alt="Логотип «Drink to go».">
         </a>
         <ul class="main-nav__list user-list">
           <li class="user-list__item">
-            <svg class="user-list__icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="images/icons/stack.svg#user"></use>
-            </svg>
             <a class="user-list__link" href="#">
+              <svg class="user-list__icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="images/icons/stack.svg#user"></use>
+              </svg>
               <span class="visually-hidden">Войти</span>
             </a>
           </li>
@@ -36,11 +36,17 @@
             </a>
           </li>
         </ul>
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle button-open" type="button">
           <svg class="site-list__icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="images/icons/stack.svg#burger"></use>
           </svg>
           <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <button class="main-nav__toggle button-close visually-hidden" type="button">
+          <svg class="site-list__icon" width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="images/icons/stack.svg#close"></use>
+          </svg>
+          <span class="visually-hidden">Звкрыть меню</span>
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -64,7 +70,36 @@
       <section class="hero">
         <h2 class="visually-hidden">Новинки</h2>
         <!--Слайдер -->
-        <ul class="hero-list">
+        <button class="hero-button slider-prev" type="button">
+          <span class="visually-hidden">Предыдущее фото</span>
+          <svg class="hero-button__icon" width="11" height="20" viewBox="0 0 11 20" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="images/icons/stack.svg#arrow-left"></use>
+          </svg>
+        </button>
+        <button class="hero-button slider-next" type="button">
+          <span class="visually-hidden">Следующее фото</span>
+          <svg class="hero-button__icon" width="11" height="20" viewBox="0 0 11 20" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="images/icons/stack.svg#arrow-right"></use>
+          </svg>
+        </button>
+        <ol class="hero-pagination visually-hidden">
+          <li class="hero-pagination__item">
+            <button class="hero-pagination__button hero-pagination__button-active" type="button">
+              <span class="visually-hidden">Товар 1</span>
+            </button>
+          </li>
+          <li class="hero-pagination__item">
+            <button class="hero-pagination__button" type="button">
+              <span class="visually-hidden">Товар 2</span>
+            </button>
+          </li>
+          <li class="hero-pagination__item">
+            <button class="hero-pagination__button" type="button">
+              <span class="visually-hidden">Товар 3</span>
+            </button>
+          </li>
+        </ol>
+        <ol class="hero-list">
           <li class="hero-list__item">
             <picture>
               <source media="(min-width: 1200px)" srcset="images/flat_white_desktop@1x.webp 1x, images/flat_white_desktop@2x.webp 2x">
@@ -83,7 +118,7 @@
               <a class="hero-list__button button" href="#">Заказать</a>
             </div>
           </li>
-          <li class="hero-list__item">
+          <li class="hero-list__item visually-hidden">
             <picture>
               <source media="(min-width: 1200px)" srcset="images/lavender_desktop@1x.webp 1x, images/lavender_desktop@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="images/lavender_tablet@1x.webp 1x, images/lavender_tablet@2x.webp 2x">
@@ -100,7 +135,7 @@
               <a class="hero-list__button button" href="#">Заказать</a>
             </div>
           </li>
-          <li class="hero-list__item">
+          <li class="hero-list__item visually-hidden">
             <picture>
               <source media="(min-width: 1200px)" srcset="images/espresso_desktop@1x.webp 1x, images/espresso_desktop@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="images/espresso_tablet@1x.webp 1x, images/espresso_tablet@2x.webp 2x">
@@ -117,7 +152,7 @@
               <a class="hero-list__button button" href="#">Заказать</a>
             </div>
           </li>
-        </ul>
+        </ol>
       </section>
       <section class="advantages">
         <span class="advantages-flag">Преимущества</span>
@@ -448,7 +483,7 @@
       <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
         Разаработано в HTML Academy
         <svg class="copyright__icon" width="12" height="16" viewBox="0 0 12 16" fill="white" xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="img/sprite.svg#academy-logo"></use>
+          <use xlink:href="images/icons/stack.svg#academy-logo"></use>
         </svg>
       </a>
     </footer>

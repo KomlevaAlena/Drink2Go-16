@@ -1,3 +1,7 @@
+.hero {
+  position: relative;
+}
+
 .hero-list {
   display: flex;
   flex-wrap: wrap;
@@ -88,4 +92,92 @@
 
 .hero-list__button {
   text-transform: none;
+}
+
+.hero-button {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 20px;
+  height: 652px;
+  background-color: transparent;
+  border-radius: none;
+  border: none;
+}
+
+.slider-next {
+  right: 0;
+
+  &:hover {
+    background: linear-gradient(-90deg, rgba(240, 235, 255, 1), transparent,);
+    outline: none;
+    border: none;
+  }
+
+  &:focus {
+    background: linear-gradient(-90deg, rgba(240, 235, 255, 1), transparent,);
+    outline: none;
+    border: none;
+  }
+
+  &:active {
+    background: linear-gradient(-90deg, rgba(120, 89, 207, 1), transparent,);
+  }
+
+  &:disabled {
+    background-color: rgba(226, 226, 226, 1);//как правильно красить иконки
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.slider-prev {
+  &:hover {
+    background: linear-gradient(90deg, rgba(240, 235, 255, 1), transparent,);
+    outline: none;
+    border: none;
+  }
+
+  &:focus {
+    background: linear-gradient(90deg, rgba(240, 235, 255, 1), transparent,);
+    outline: none;
+    border: none;
+  }
+
+  &:active {
+    background: linear-gradient(90deg, rgba(120, 89, 207, 1), transparent,);
+  }
+
+  &:disabled {
+    background-color: rgba(226, 226, 226, 1);//как правильно красить иконки
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.hero-pagination {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  bottom: 60px;
+}
+
+.hero-pagination__button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: none;
+  background-color: rgba(255, 255, 255, 1);
+  width: 64px;
+  height: 4px;
+  margin: 8px;
+  //background: linear-gradient(to right, blue, transparent,);
+
+  &-active {
+    background-color: rgba(120, 89, 207, 1);
+  }
 }
