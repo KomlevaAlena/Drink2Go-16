@@ -15,14 +15,17 @@
 
   &:hover {
     background-color: rgba(144, 112, 236, 1);
+    color: rgba(255, 255, 255, 1);
   }
 
   &:focus {
     outline: 1px solid rgba(144, 112, 236, 1);
+    color: rgba(255, 255, 255, 1);
   }
 
   &:active {
     background-color: rgba(89, 60, 172, 1);
+    color: rgba(255, 255, 255, 1);
   }
 
   &:disabled {

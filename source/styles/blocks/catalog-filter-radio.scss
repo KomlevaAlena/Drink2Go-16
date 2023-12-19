@@ -22,7 +22,7 @@
     height: 18px;
     background-color: rgba(120, 89, 207, 1);
     border-radius: 50%;
-    content: "";//работает, но странно
+    content: "";
   }
 
   &:hover {
@@ -82,9 +82,24 @@
       height: 18px;
       background-color: rgba(226, 226, 226, 1);
       border-radius: 50%;
-      content: "";//работает?
+      content: "";//не будет работать
     }
   }
+}
+
+.catalog-filter__input[type="radio"]:checked + .catalog-filter__mark {
+  border-color: rgba(120, 89, 207, 1);
+}
+
+.catalog-filter__input[type="radio"]:checked + .catalog-filter__mark::before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: rgba(120, 89, 207, 1);
+  content: "";
 }
 
 .catalog-filter__list--radio {
