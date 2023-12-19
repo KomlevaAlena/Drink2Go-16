@@ -1,5 +1,14 @@
 .main-nav{
   position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    background-color: rgba(255, 255, 255, 1);
+  }
 }
 
 .main-nav__logo {
@@ -8,6 +17,11 @@
   margin-top: 12px;
   margin-bottom: 12px;
   margin-right: auto;
+  background-image: url("/images/logo-simbol.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 32px;
+  width: 36px;
 
   &:hover {
     color: rgba(120, 89, 207, 1);
@@ -29,5 +43,17 @@
   &:disabled {
     background-color: rgba(226, 226, 226, 1);
     color: rgba(255, 255, 255, 1);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__logo {
+    background-image: url("/images/logo-medium.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 82px;
+    order: -2;
+    margin-top: 22px;
   }
 }

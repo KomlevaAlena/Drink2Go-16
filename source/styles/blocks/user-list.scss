@@ -37,3 +37,9 @@
 .user-list__icon {
   fill: rgba(51, 51, 51, 1);
 }
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    margin-right: 20px;
+  }
+}

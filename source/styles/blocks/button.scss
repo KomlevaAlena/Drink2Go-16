@@ -36,6 +36,10 @@
     background-color: rgba(226, 226, 226, 1);
     color: rgba(255, 255, 255, 1);
   }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .button-close {
@@ -60,4 +64,5 @@
     background-color: rgba(226, 226, 226, 1);
     color: rgba(255, 255, 255, 1);
   }
+
 }

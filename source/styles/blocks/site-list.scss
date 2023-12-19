@@ -44,3 +44,29 @@
 .site-list__link--active {
   color: rgba(120, 89, 207, 1);//для таблета и десктопа и еще нужно подчеркивание
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0;
+    order: -1;
+    left: 169px;
+  }
+
+  .site-list__item {
+    max-width: 130px;
+    border: none;
+  }
+
+  .site-list__link {
+    padding-top: 32px;
+    padding-bottom: 36px;
+
+    &--active {
+      border-bottom: 2px solid rgba(120, 89, 207, 1);
+    }
+  }
+}
