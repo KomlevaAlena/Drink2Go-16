@@ -1,11 +1,12 @@
 .media-list {
   @include list;
   flex-direction: column;
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
 
   &__link {
     display: block;
+    margin-left: 20px;
     padding-top: 12px;
     text-decoration: none;
     text-align: left;
@@ -32,5 +33,9 @@
       background-color: rgba(226, 226, 226, 1);
       color: rgba(255, 255, 255, 1);
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 223px;
   }
 }

@@ -4,9 +4,11 @@
 
   &__logo {
     display: block;
+    width: 82px;
+    height: 36px;
     margin-left: 20px;
     margin-right: 38px;
-    background-image: url("/images/logo-simbol.svg");
+    background-image: url("/images/logo-short.svg");
     background-size: 82px 36px;
     background-repeat: no-repeat;
     background-position: center;
@@ -14,6 +16,30 @@
 
   &__link {
     display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 728px;
+    grid-column: 1/4;
+
+    &__logo {
+      width: 170px;
+      height: 36px;
+      margin-left: 20px;
+      background-image: url("/images/logo-full.svg");
+      background-size: 1702px 36px;
+    }
+  }
+}
+
+.social-list__item {
+  margin-right: 40px;
+
+  &:first-of-type {
+    margin-right: auto;
+  }
+  &:last-of-type {
+    margin-right: 0;
   }
 }
 

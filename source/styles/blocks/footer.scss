@@ -33,6 +33,15 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
+    display: grid;
+    grid-template-columns: repeat(3, 223px);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 20px;
+    grid-row-gap: 32px;
+
+    &-list {
+      border: none;
+    }
   }
 }
 

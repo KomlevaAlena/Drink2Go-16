@@ -1,12 +1,14 @@
 .contact-list {
   position: relative;
+
   @include list;
   flex-direction: column;
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
 
   &__link {
     display: block;
+    margin-left: 20px;
     padding-left: 19px;
     text-decoration: none;
     text-transform: none;
@@ -35,6 +37,14 @@
       color: rgba(255, 255, 255, 1);
     }
   }
+
+  @media (min-width: $tablet-width) {
+    width: 223px;
+
+    &__link {
+      width: 178px;
+    }
+  }
 }
 
 .contact__icon-address {
@@ -42,6 +52,7 @@
   position: absolute;
   display: block;
   top: 0;
+  left: 20px;
   width: 13px;
   height: 16px;
 }
@@ -51,6 +62,7 @@
   position: absolute;
   display: block;
   top: 55px;
+  left: 20px;
   width: 13px;
   height: 16px;
 }

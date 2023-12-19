@@ -30,4 +30,12 @@
       color: rgba(255, 255, 255, 1);
     }
   }
+
+  @media (min-width: $tablet-width) {
+    width: 223px;
+
+    &__link {
+      margin-left: 20px;
+    }
+  }
 }

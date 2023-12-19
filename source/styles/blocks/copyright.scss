@@ -29,6 +29,13 @@
     color: rgba(226, 226, 226, 1);
     fill: rgba(226, 226, 226, 1);
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 12px;
+    line-height: 16px;
+    width: 223px;
+    grid-column: 1/4;
+  }
 }
 
 .copyright__icon {
@@ -55,5 +62,12 @@
 
   &:disabled {
     fill: rgba(226, 226, 226, 1);
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 22px;
+    right: 10px;
+    width: 12px;
+    height: 16px;
   }
 }
