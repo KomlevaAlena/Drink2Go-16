@@ -20,10 +20,23 @@
     height: 38px;
     width: 50px;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+
+    &::after {
+      top: 237px;
+      left: 374px;
+    }
+  }
 }
 
 .map-image {
   display: block;
   z-index: 1;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
 }
