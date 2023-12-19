@@ -71,3 +71,44 @@
   font-size: 16px;
   line-height: 24px;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    width: 768px;
+  }
+
+  .catalog-flag {
+    padding-top: 80px;
+  }
+
+  .catalog-title {
+    width: 728px;
+  }
+
+  .catalog-filter {
+    width: 728px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 223px);
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
+  }
+
+  .catalog-filter__range {
+    width: 223px;
+  }
+
+  .catalog-filter__button-group {
+    width: 277px;
+    flex-direction: row;
+    margin: 0 auto;
+    grid-column: 1 / 4;
+    grid-row: 2;
+  }
+
+  .catalog-filter__button {
+    margin: 0 auto;
+    padding: 8px 20px;
+  }
+}

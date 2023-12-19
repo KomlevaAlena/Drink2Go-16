@@ -5,6 +5,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 728px;
+  }
 }
 
 .product-list {
@@ -15,4 +19,13 @@
   padding: 0;
   width: 280px;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    width: 728px;
+    display: grid;
+    grid-template-columns: repeat(2, 349px);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
 }
