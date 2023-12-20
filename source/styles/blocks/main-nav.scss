@@ -1,4 +1,4 @@
-.main-nav{
+.main-nav {
   position: relative;
   margin: 0 auto;
   display: flex;
@@ -8,6 +8,10 @@
   @media (min-width: $tablet-width) {
     width: 768px;
     background-color: rgba(255, 255, 255, 1);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
   }
 }
 
@@ -46,6 +50,10 @@
   }
 }
 
+.main-nav__logo-text {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .main-nav__logo {
     background-image: url("/images/logo-medium.svg");
@@ -55,5 +63,32 @@
     width: 82px;
     order: -2;
     margin-top: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__logo {
+    background-image: url("/images/logo-full.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 170px;
+    order: -2;
+    margin-top: 22px;
+    margin-left: 40px;
+    margin-right: 0;
+    padding-left: 10px;
+  }
+
+  .main-nav__logo-text {
+    display: block;
+    margin-top: 22px;
+    padding-left: 10px;
+    margin-left: 0;
+    width: 132px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    order: -1;
   }
 }

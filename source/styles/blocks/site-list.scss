@@ -70,3 +70,10 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    margin-left: 162px;
+    margin-right: 162px;
+  }
+}
