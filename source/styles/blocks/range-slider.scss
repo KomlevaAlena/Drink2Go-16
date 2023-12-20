@@ -17,15 +17,39 @@
   height: 2px;
 }
 
+.noUi-horizontal .noUi-handle {
+  width: 22px;
+  height: 22px;
+  right: -10px;
+  top: -10px;
+}
+
 .noUi-connect {
   background: rgba(144, 112, 236, 1);
 }
 
-.noUi-handle-lower {
+.noUi-handle {
+  border-radius: 50%;
   width: 22px;
   height: 22px;
   background-color: rgba(255, 255, 255, 1);
-  border: 1ps solid rgba(144, 112, 236, 1);
+  background-image: none;
+  border: 2px solid rgba(144, 112, 236, 1);
+  top: -13px;
+
+  &::before {
+    display: none;
+  }
+
+  &::after {
+    display: none;
+  }
+}
+
+.noUi-touch-area {
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
 }
 
 .range-title {
