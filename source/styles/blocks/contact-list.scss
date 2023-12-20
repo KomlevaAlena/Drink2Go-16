@@ -45,6 +45,10 @@
       width: 178px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 317px;
+  }
 }
 
 .contact__icon-address {

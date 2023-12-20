@@ -33,6 +33,11 @@
 
   @media (min-width: $desktop-width) {
     width: 1440px;
+
+    &::after {
+      top: 192px;
+      left: 710px;
+    }
   }
 }
 

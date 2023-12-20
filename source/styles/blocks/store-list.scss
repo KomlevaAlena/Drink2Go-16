@@ -38,4 +38,12 @@
       margin-left: 20px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 317px;
+
+    &__link {
+      margin-left: 0;
+    }
+  }
 }

@@ -36,6 +36,13 @@
     width: 223px;
     grid-column: 1/4;
   }
+
+
+  @media (min-width: $desktop-width) {
+    width: 223px;
+    grid-column: 2/4;
+  }
+
 }
 
 .copyright__icon {

@@ -38,4 +38,12 @@
   @media (min-width: $tablet-width) {
     width: 223px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 317px;
+
+    &__link {
+      margin-left: 20px;
+    }
+  }
 }

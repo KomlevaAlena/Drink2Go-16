@@ -43,5 +43,13 @@
       border: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    grid-template-columns: repeat(4, 317px);
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
+  }
 }
 

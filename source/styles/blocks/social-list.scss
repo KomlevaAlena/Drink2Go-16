@@ -50,6 +50,26 @@
       background-size: 1702px 36px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 317px;
+    grid-column: 1/2;
+    justify-content: flex-start;
+
+    &__logo {
+      margin-left: 40px;
+    }
+  }
+}
+
+.social-list__logo-text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-left: 40px;
+    text-transform: none;
+  }
 }
 
 .social-list__item {
@@ -80,6 +100,10 @@
   mask-repeat: no-repeat;
   mask-size: 40px 40px;
   background-color: rgba(189, 189, 189, 1);
+
+  @media (min-width: $desktop-width) {
+    margin-left: 30px;
+  }
 }
 
 .social-list__link-pinterest {
