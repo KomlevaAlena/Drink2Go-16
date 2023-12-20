@@ -112,3 +112,42 @@
     padding: 8px 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    width: 1440px;
+  }
+
+  .catalog-flag {
+    padding-top: 220px;
+  }
+
+  .catalog-title {
+    width: 1360px;
+  }
+
+  .catalog-wrapper {
+    width: 1360px;
+    display: grid;
+    grid-template-columns: 318px 1011px;
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 30px;
+  }
+
+  .catalog-filter {
+    width: 318px;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    flex-direction: column;
+  }
+
+  .catalog-select__wrapper {
+    width: 262px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}

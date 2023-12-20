@@ -9,6 +9,10 @@
   @media (min-width: $tablet-width) {
     width: 728px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1011px;
+  }
 }
 
 .product-list {
@@ -25,6 +29,16 @@
     display: grid;
     grid-template-columns: repeat(2, 349px);
     grid-template-rows: repeat(3, auto);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1011px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    grid-template-columns: repeat(3, 317px);
+    grid-template-rows: repeat(2, auto);
     grid-column-gap: 30px;
     grid-row-gap: 30px;
   }
