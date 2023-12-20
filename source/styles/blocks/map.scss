@@ -23,9 +23,10 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
+    padding-top: 0;
 
     &::after {
-      top: 237px;
+      top: 194px;
       left: 374px;
     }
   }

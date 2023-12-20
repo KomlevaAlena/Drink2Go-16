@@ -189,11 +189,14 @@
   width: 64px;
   height: 4px;
   margin: 8px;
-  //background: linear-gradient(to right, blue, transparent,);
 
   &-active {
     background-color: rgba(120, 89, 207, 1);
   }
+}
+
+.hero-button__icon {
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {

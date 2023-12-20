@@ -34,6 +34,28 @@
   }
 }
 
+.user-list__link-basket {
+  display: block;
+  margin-top: 32px;
+  mask-image: url("/images/icons/stack.svg#basket");
+  width: 16px;
+  height: 16px;
+  mask-repeat: no-repeat;
+  mask-size: 16px 16px;
+  background-color: rgba(51, 51, 51, 1);
+}
+
+.user-list__link-user {
+  display: block;
+  margin-top: 32px;
+  mask-image: url("/images/icons/stack.svg#user");
+  width: 16px;
+  height: 16px;
+  mask-repeat: no-repeat;
+  mask-size: 16px 16px;
+  background-color: rgba(51, 51, 51, 1);
+}
+
 .user-list__icon {
   fill: rgba(51, 51, 51, 1);
 }

@@ -16,6 +16,26 @@
 
   &__link {
     display: block;
+
+    &:last-of-type {
+      padding-bottom: 20px;
+    }
+
+    &:hover {
+      background-color: rgba(120, 89, 207, 1);
+    }
+
+    &:focus {
+      background-color: rgba(120, 89, 207, 1);
+    }
+
+    &:active {
+      background-color: rgba(144, 112, 236, 1);
+    }
+
+    &:disabled {
+      background-color: rgba(226, 226, 226, 1);
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -38,18 +58,46 @@
   &:first-of-type {
     margin-right: auto;
   }
+
+  &:nth-of-type(3) {
+    margin-top: 10px;
+  }
+
+  &:nth-of-type(4) {
+    margin-top: 10px;
+  }
+
   &:last-of-type {
     margin-right: 0;
   }
 }
 
-.social__icon-pinterest {
+.social-list__link-vk {
   display: block;
-  padding-top: 10px;
+  mask-image: url("/images/icons/stack.svg#vk");
+  width: 40px;
+  height: 40px;
+  mask-repeat: no-repeat;
+  mask-size: 40px 40px;
+  background-color: rgba(189, 189, 189, 1);
 }
 
-.social__icon-ok {
+.social-list__link-pinterest {
   display: block;
-  padding-top: 10px;
-  margin-right: 30px;
+  mask-image: url("/images/icons/stack.svg#pinterest");
+  width: 20px;
+  height: 20px;
+  mask-repeat: no-repeat;
+  mask-size: 20px 20px;
+  background-color: rgba(189, 189, 189, 1);
+}
+
+.social-list__link-ok {
+  display: block;
+  mask-image: url("/images/icons/stack.svg#ok");
+  width: 20px;
+  height: 20px;
+  mask-repeat: no-repeat;
+  mask-size: 20px 20px;
+  background-color: rgba(189, 189, 189, 1);
 }
