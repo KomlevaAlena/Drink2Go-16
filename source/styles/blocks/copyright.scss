@@ -10,6 +10,21 @@
   text-align: left;
   color: rgba(189, 189, 189, 1);
 
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 12px;
+    height: 16px;
+    mask-image: url("/images/icons/stack.svg#academy-logo");
+    mask-repeat: no-repeat;
+    mask-size: 12px 16px;
+    mask-position: center;
+    background-color: rgba(189, 189, 189, 1);
+    top: 22px;
+    right: 11px;
+  }
+
   &:hover {
     color: rgba(120, 89, 207, 1);
     fill: rgba(120, 89, 207, 1);
@@ -42,7 +57,6 @@
     width: 223px;
     grid-column: 2/4;
   }
-
 }
 
 .copyright__icon {
