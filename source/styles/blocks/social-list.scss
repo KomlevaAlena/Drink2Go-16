@@ -1,0 +1,127 @@
+.social-list {
+  flex-direction: row;
+  padding-bottom: 22px;
+
+  &__logo {
+    display: block;
+    width: 82px;
+    height: 36px;
+    margin-left: 20px;
+    margin-right: 38px;
+    background-image: url("/images/logo-short.svg");
+    background-size: 82px 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__link {
+    display: block;
+
+    &:last-of-type {
+      padding-bottom: 20px;
+    }
+
+    &:hover {
+      background-color: rgba(120, 89, 207, 1);
+    }
+
+    &:focus {
+      background-color: rgba(120, 89, 207, 1);
+    }
+
+    &:active {
+      background-color: rgba(144, 112, 236, 1);
+    }
+
+    &:disabled {
+      background-color: rgba(226, 226, 226, 1);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 728px;
+    grid-column: 1/4;
+
+    &__logo {
+      width: 170px;
+      height: 36px;
+      margin-left: 20px;
+      background-image: url("/images/logo-full.svg");
+      background-size: 1702px 36px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 317px;
+    grid-column: 1/2;
+    justify-content: flex-start;
+
+    &__logo {
+      margin-left: 40px;
+    }
+  }
+}
+
+.social-list__logo-text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-left: 40px;
+    text-transform: none;
+  }
+}
+
+.social-list__item {
+  margin-right: 40px;
+
+  &:first-of-type {
+    margin-right: auto;
+  }
+
+  &:nth-of-type(3) {
+    margin-top: 10px;
+  }
+
+  &:nth-of-type(4) {
+    margin-top: 10px;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.social-list__link-vk {
+  display: block;
+  mask-image: url("/images/icons/stack.svg#vk");
+  width: 40px;
+  height: 40px;
+  mask-repeat: no-repeat;
+  mask-size: 40px 40px;
+  background-color: rgba(189, 189, 189, 1);
+
+  @media (min-width: $desktop-width) {
+    margin-left: 30px;
+  }
+}
+
+.social-list__link-pinterest {
+  display: block;
+  mask-image: url("/images/icons/stack.svg#pinterest");
+  width: 20px;
+  height: 20px;
+  mask-repeat: no-repeat;
+  mask-size: 20px 20px;
+  background-color: rgba(189, 189, 189, 1);
+}
+
+.social-list__link-ok {
+  display: block;
+  mask-image: url("/images/icons/stack.svg#ok");
+  width: 20px;
+  height: 20px;
+  mask-repeat: no-repeat;
+  mask-size: 20px 20px;
+  background-color: rgba(189, 189, 189, 1);
+}

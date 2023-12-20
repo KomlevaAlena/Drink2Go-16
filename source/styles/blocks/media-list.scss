@@ -1,0 +1,49 @@
+.media-list {
+  @include list;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+
+  &__link {
+    display: block;
+    margin-left: 20px;
+    padding-top: 12px;
+    text-decoration: none;
+    text-align: left;
+    color: rgba(51, 51, 51, 1);
+
+    &:last-of-type {
+      padding-bottom: 20px;
+    }
+
+    &:hover {
+      color: rgba(120, 89, 207, 1);
+    }
+
+    &:focus {
+      color: rgba(120, 89, 207, 1);
+    }
+
+    &:active {
+      background-color: rgba(240, 235, 255, 1);
+      color: rgba(120, 89, 207, 1);
+    }
+
+    &:disabled {
+      background-color: rgba(226, 226, 226, 1);
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 223px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 317px;
+
+    &__link {
+      margin-left: 20px;
+    }
+  }
+}

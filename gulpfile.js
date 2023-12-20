@@ -190,6 +190,7 @@ export function runDev (done) {
       processStyles,
       processScripts,
       createStack,
+      copyStatic,
     ),
     startServer,
   )(done);

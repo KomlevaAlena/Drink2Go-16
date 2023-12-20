@@ -1,0 +1,79 @@
+.site-list {
+  @include list;
+  text-transform: uppercase;
+}
+
+.site-list__item {
+  width: 320px;
+  border-top: 1px solid rgba(240, 235, 255, 1);
+  border-bottom: 1px solid rgba(240, 235, 255, 1);//нет подчеркивания?
+}
+
+.site-list__link {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  text-align: center;
+  color: rgba(51, 51, 51, 1);
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &:hover {
+    color: rgba(120, 89, 207, 1);
+    outline: none;
+    border: none;
+  }
+
+  &:focus {
+    color: rgba(120, 89, 207, 1);
+    outline: none;
+    border: none;
+  }
+
+  &:active {
+    background-color: rgba(240, 235, 255, 1);
+    color: rgba(51, 51, 51, 1);
+  }
+
+  &:disabled {
+    background-color: rgba(226, 226, 226, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.site-list__link--active {
+  color: rgba(120, 89, 207, 1);//для таблета и десктопа и еще нужно подчеркивание
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0;
+    order: -1;
+    left: 169px;
+  }
+
+  .site-list__item {
+    max-width: 130px;
+    border: none;
+  }
+
+  .site-list__link {
+    padding-top: 32px;
+    padding-bottom: 36px;
+
+    &--active {
+      border-bottom: 2px solid rgba(120, 89, 207, 1);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    margin-left: 162px;
+    margin-right: 162px;
+  }
+}

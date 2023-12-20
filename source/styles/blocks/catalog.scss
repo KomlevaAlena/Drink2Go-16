@@ -1,0 +1,154 @@
+.catalog {
+  margin: 0 auto;
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: rgba(248, 248, 248, 1);
+}
+
+.catalog-flag {
+  @include flag;
+  padding-top: 50px;
+}
+
+.catalog-title {
+  @include title_h2;
+  padding-top: 4px;
+}
+
+.catalog-filter__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog-filter__title {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  padding-top: 20px;
+}
+
+.catalog-filter {
+  &__range {
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    width: 280px;
+  }
+
+  &__radio {
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    width: 280px;
+  }
+
+  &__checkbox {
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    width: 280px;
+  }
+
+  &__button-group {
+    margin: 0 auto;
+    width: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 10px;
+  }
+}
+
+.catalog-filter__button {
+  margin-top: 20px;
+  text-transform: none;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    width: 768px;
+  }
+
+  .catalog-flag {
+    padding-top: 80px;
+  }
+
+  .catalog-title {
+    width: 728px;
+  }
+
+  .catalog-filter {
+    width: 728px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 223px);
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
+  }
+
+  .catalog-filter__range {
+    width: 223px;
+  }
+
+  .catalog-filter__button-group {
+    width: 277px;
+    flex-direction: row;
+    margin: 0 auto;
+    grid-column: 1 / 4;
+    grid-row: 2;
+  }
+
+  .catalog-filter__button {
+    margin: 0 auto;
+    padding: 8px 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    width: 1440px;
+  }
+
+  .catalog-flag {
+    padding-top: 100px;
+  }
+
+  .catalog-title {
+    width: 1360px;
+  }
+
+  .catalog-wrapper {
+    margin: 0 auto;
+    width: 1360px;
+    display: grid;
+    grid-template-columns: 318px 1011px;
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 30px;
+  }
+
+  .catalog-filter {
+    width: 318px;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    flex-direction: column;
+  }
+
+  .catalog-select__wrapper {
+    width: 262px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}

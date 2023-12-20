@@ -1,0 +1,23 @@
+//отжельная стилизация для каждого вьюпорта
+
+.page-body {
+  margin: 0 auto;
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: rgba(51, 51, 51, 1);
+  background-color: rgba(226, 226, 226, 1);
+  font-family: "Montserrat-Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}

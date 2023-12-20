@@ -1,0 +1,117 @@
+.pagination-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 728px;
+    padding-bottom: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 120px;
+    margin-right: 40px;
+  }
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  width: 280px;
+  list-style-type: none;
+  padding-top: 40px;
+
+  &-link {
+    @include button;
+    @include button-clean;
+    margin: 0 auto;
+    text-align: center;
+    padding: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    width: 24px;
+  }
+
+  &-link__before {
+    background-image: url("/images/arrow-left.svg");
+    background-size: 10px 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 10px;
+  }
+
+  &-link__after {
+    background-image: url("/images/arrow-right.svg");
+    background-size: 10px 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 10px;
+  }
+
+  &-link_active {
+    background-color: transparent;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 600;
+  }
+
+  &-link:hover {
+    background-color: rgba(144, 112, 236, 1);
+  }
+
+  &-link:focus {
+    background-color: rgba(144, 112, 236, 1);
+    outline: none;
+    border: 0;
+  }
+
+  &-link:active {
+    background-color: rgba(89, 60, 172, 1);
+  }
+
+  &-link:disabled {
+    background-color: rgba(226, 226, 226, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 70px;
+    width: 395px;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .pagination-link__before {
+    display: block;
+    width: 61px;
+    background-image: none;
+    background-size: auto;
+    padding: 8px 20px;
+  }
+
+  .pagination-link__after {
+    display: block;
+    width: 61px;
+    background-image: none;
+    background-size: auto;
+    padding: 8px 20px;
+  }
+}
+
+.pagination-word {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: transparent;
+  }
+}

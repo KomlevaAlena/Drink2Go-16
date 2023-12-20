@@ -1,0 +1,143 @@
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin button {
+  font-family: "Montserrat-Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(120, 89, 207, 1);
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  padding: 8px 20px 8px 20px;
+  border-radius: 4px 4px;
+  display: block;
+
+  &:hover {
+    background-color: rgba(144, 112, 236, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+
+  &:focus {
+    background-color: rgba(144, 112, 236, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+
+  &:active {
+    background-color: rgba(89, 60, 172, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+
+  &:disabled {
+    background-color: rgba(189, 189, 189, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+@mixin button-clean {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(120, 89, 207, 1);
+}
+
+@mixin flag {
+  display: block;
+  margin: 0 auto;
+  font-family: "Montserrat-Bold", "Arial", sans-serif;
+  font-weight: 700;//почяему не жирный??
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(120, 89, 207, 1);
+  text-transform: uppercase;
+  letter-spacing: 0.48px;
+  text-align: center;
+}
+
+@mixin title_h2 {
+  display: block;
+  margin: 0 auto;
+  font-family: "Montserrat-Bold", "Arial", sans-serif;
+  font-weight: 700;//почяему не жирный??
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+  }
+}
+
+@mixin title_h3 {
+  display: block;
+  margin: 0 auto;
+  font-family: "Montserrat-Bold", "Arial", sans-serif;
+  font-weight: 700;//почяему не жирный??
+  font-size: 18px;
+  line-height: 32px;
+}
+
+@mixin filed {
+  display: block;
+  margin: 0;
+  padding: 8px 10px 8px 10px;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(51, 51, 51, 1);
+  border-radius: 4px;
+  outline: 2px solid rgba(144, 112, 236, 1);
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+
+  &::placeholder {
+    color: rgba(189, 189, 189, 1);
+  }
+
+  &:hover {
+    outline: 2px solid rgba(89, 60, 172, 1);
+  }
+
+  &:focus {
+    outline: 2px solid rgba(89, 60, 172, 1);
+  }
+
+  &:active {
+    outline: 2px solid rgba(89, 60, 172, 1);
+  }
+
+  &:disabled {
+    color: rgba(189, 189, 189, 1);
+    outline: 2px solid rgba(226, 226, 226, 1);
+  }
+}
+
+@mixin list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  font-family: "Montserrat-Regular", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 1);
+  background-color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+}

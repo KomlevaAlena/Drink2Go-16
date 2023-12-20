@@ -2,6 +2,29 @@
 @import "./global/variables.scss";
 @import "./global/global.scss";
 @import "./global/fonts.scss";
+@import "./global/mixins.scss";
 
 /* BLOCKS */
 @import "./blocks/header.scss";
+@import "./blocks/page-body.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/button.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/user-list.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/range-slider.scss";
+@import "./blocks/catalog-filter-radio.scss";
+@import "./blocks/catalog-filter-checkbox.scss";
+@import "./blocks/catalog-select.scss";
+@import "./blocks/product-list.scss";
+@import "./blocks/product-card.scss";
+@import "./blocks/pagination.scss";
+@import "./blocks/map.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/social-list.scss";
+@import "./blocks/store-list.scss";
+@import "./blocks/media-list.scss";
+@import "./blocks/contact-list.scss";
+@import "./blocks/copyright.scss";

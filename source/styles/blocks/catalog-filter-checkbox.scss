@@ -1,0 +1,134 @@
+.catalog-filter__input[type="checkbox"] + .catalog-filter__mark {
+  border-radius: 13px;
+  position: absolute;
+  top: 18px;
+  left: 0;
+  width: 40px;
+  height: 22px;
+  border: 2px solid transparent;
+  background-color: rgba(189, 189, 189, 1);
+
+  &::before {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 1);
+    content: "";
+  }
+
+  &:checked + .catalog-filter__mark {
+    background-color: rgba(120, 89, 207, 1);
+
+    &::before {
+      position: absolute;
+      top: 1px;
+      left: 18px;
+      width: 20px;
+      height: 20px;
+      background-color: rgba(255, 255, 255, 1);
+      border-radius: 50%;
+      content: "";//не чекает
+    }
+  }
+
+  &:hover {
+    border-color: rgba(120, 89, 207, 1);
+    background-color: rgba(120, 89, 207, 0.25);
+
+    &::before {
+      position: absolute;
+      top: 1px;
+      left: 1px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 1);
+      content: "";
+    }
+  }
+
+  &:focus {
+    border-color: rgba(120, 89, 207, 1);
+    background-color: rgba(120, 89, 207, 0.25);
+
+    &::before {
+      position: absolute;
+      top: 1px;
+      left: 1px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 1);
+      content: "";
+    }
+  }
+
+  &:active {
+    border-color: rgba(120, 89, 207, 1);
+
+    &::before {
+      position: absolute;
+      top: 1px;
+      left: 1px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: rgba(120, 89, 207, 1);
+      content: "";
+    }
+  }
+
+  &:disabled {
+    background-color: rgba(226, 226, 226, 1);
+    border-color: rgba(226, 226, 226, 1);
+
+    &:checked + .catalog-filter__mark::before {
+      position: absolute;
+      top: 1px;
+      right: 1px;
+      width: 20px;
+      height: 20px;
+      background-color: rgba(189, 189, 189, 1);
+      border-radius: 50%;
+      content: "";//работает?
+    }
+  }
+}
+
+.catalog-filter__input[type="checkbox"]:checked + .catalog-filter__mark {
+  background-color: rgba(120, 89, 207, 1);
+}
+
+.catalog-filter__input[type="checkbox"]:checked + .catalog-filter__mark::before {
+  position: absolute;
+  top: 1px;
+  left: 19px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 1);
+  content: "";
+}
+
+.catalog-filter__list--checkbox {
+  margin: 0 auto;
+  width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0;
+  list-style-type: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.catalog-filter__label--checkbox {
+  display: block;
+  padding-left: 54px;
+  padding-top: 20px;
+}

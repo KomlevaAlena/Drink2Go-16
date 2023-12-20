@@ -1,0 +1,55 @@
+.footer {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+  padding-top: 22px;
+
+  &-list {
+    @include list;
+    width: 320px;
+    border-bottom: 1px solid rgba(240, 235, 255, 1);
+
+    .store-list__item {
+      margin: 0 auto;
+      border: none;
+      width: 280px;
+    }
+  }
+
+  &-list_title {
+    display: block;
+    width: 280px;
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(120, 89, 207, 1);
+    letter-spacing: 0.28px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    display: grid;
+    grid-template-columns: repeat(3, 223px);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 20px;
+    grid-row-gap: 32px;
+
+    &-list {
+      border: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    grid-template-columns: repeat(4, 317px);
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
+  }
+}
+
