@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="img/favicon_32.png">
     <script src="scripts/index.js" defer></script>
-    <script src="source\vendor\nouislider\nouislider.js defer"></script>
+    <script src="vendor/nouislider/nouislider.js" defer></script>
     <link rel="preload" href="/fonts/Montserrat-Regular.woff2" as="font">
     <link rel="preload" href="/fonts/Montserrat-Bold.woff2" as="font">
     <!--nouislider-->
@@ -24,26 +24,20 @@
         <ul class="main-nav__list user-list">
           <li class="user-list__item">
             <a class="user-list__link user-list__link-user" href="#">
+              <span class="visually-hidden">Вход</span>
             </a>
           </li>
           <li class="user-list__item">
             <a class="user-list__link user-list__link-basket" href="#">
+              <span class="visually-hidden">Корзина</span>
             </a>
           </li>
         </ul>
-        <button class="main-nav__toggle button-open" type="button">
-          <svg class="site-list__icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="images/icons/stack.svg#burger"></use>
-          </svg>
+        <button class="main-nav__toggle mobile-nav mobile-nav--nojs" type="button">
+          <span class="mobile-nav__icon mobile-nav__icon--close"></span>
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <button class="main-nav__toggle button-close visually-hidden" type="button">
-          <svg class="site-list__icon" width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="images/icons/stack.svg#close"></use>
-          </svg>
-          <span class="visually-hidden">Закрыть меню</span>
-        </button>
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list site-list--nojs">
           <li class="site-list__item">
             <a class="site-list__link site-list__link--active" href="index.html">Главная</a>
           </li>
@@ -95,7 +89,7 @@
           </li>
         </ol>
         <ol class="hero-list">
-          <li class="hero-list__item">
+          <li class="hero-list__item hero-list__item--active">
             <picture class="hero-list__picture">
               <source media="(min-width: 1200px)" srcset="images/flat_white_desktop@1x.webp 1x, images/flat_white_desktop@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="images/flat_white_tablet@1x.webp 1x, images/flat_white_tablet@2x.webp 2x">
@@ -113,7 +107,7 @@
               <a class="hero-list__button button" href="#">Заказать</a>
             </div>
           </li>
-          <li class="hero-list__item visually-hidden">
+          <li class="hero-list__item">
             <picture class="hero-list__picture">
               <source media="(min-width: 1200px)" srcset="images/lavender_desktop@1x.webp 1x, images/lavender_desktop@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="images/lavender_tablet@1x.webp 1x, images/lavender_tablet@2x.webp 2x">
@@ -130,7 +124,7 @@
               <a class="hero-list__button button" href="#">Заказать</a>
             </div>
           </li>
-          <li class="hero-list__item visually-hidden">
+          <li class="hero-list__item">
             <picture class="hero-list__picture">
               <source media="(min-width: 1200px)" srcset="images/espresso_desktop@1x.webp 1x, images/espresso_desktop@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="images/espresso_tablet@1x.webp 1x, images/espresso_tablet@2x.webp 2x">
@@ -191,28 +185,28 @@
             <ul class="catalog-filter__list catalog-filter__list--radio">
               <li class="catalog-filter__item">
                 <label class="catalog-filter__control">
-                  <input class="catalog-filter__input visually-hidden" type="radio" name="indifferent" value="Неважно" checked>
+                  <input class="catalog-filter__input visually-hidden" type="radio" name="milk" value="Неважно" checked>
                   <span class="catalog-filter__mark"></span><!--для создания маркера-оформительного -->
                   <span class="catalog-filter__label catalog-filter__label--radio">Неважно</span>
                 </label>
               </li>
               <li class="catalog-filter__item">
                 <label class="catalog-filter__control">
-                  <input class="catalog-filter__input visually-hidden" type="radio" name="only-animal" value="Только животное">
+                  <input class="catalog-filter__input visually-hidden" type="radio" name="milk" value="Только животное">
                   <span class="catalog-filter__mark"></span><!--для создания маркера-оформительного -->
                   <span class="catalog-filter__label catalog-filter__label--radio">Только животное</span>
                 </label>
               </li>
               <li class="catalog-filter__item">
                 <label class="catalog-filter__control">
-                  <input class="catalog-filter__input visually-hidden" type="radio" name="only-vegetable" value="Только растительное">
+                  <input class="catalog-filter__input visually-hidden" type="radio" name="milk" value="Только растительное">
                   <span class="catalog-filter__mark"></span><!--для создания маркера-оформительного -->
                   <span class="catalog-filter__label catalog-filter__label--radio">Только растительное</span>
                 </label>
               </li>
               <li class="catalog-filter__item">
                 <label class="catalog-filter__control">
-                  <input class="catalog-filter__input visually-hidden" type="radio" name="whithout-milk" value="Без молока">
+                  <input class="catalog-filter__input visually-hidden" type="radio" name="milk" value="Без молока">
                   <span class="catalog-filter__mark"></span><!--для создания маркера-оформительного -->
                   <span class="catalog-filter__label catalog-filter__label--radio">Без молока</span>
                 </label>

@@ -1,6 +1,19 @@
 .site-list {
   @include list;
   text-transform: uppercase;
+  display: none;
+  position: absolute;
+  top: 65px;
+  z-index: 4;
+
+  &--nojs {
+    display: block;
+    position: static;
+  }
+
+  &--open {
+    display: flex;
+  }
 }
 
 .site-list__item {
@@ -47,6 +60,7 @@
 
 @media (min-width: $tablet-width) {
   .site-list {
+    position: static;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

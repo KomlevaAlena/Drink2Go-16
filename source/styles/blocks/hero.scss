@@ -4,7 +4,7 @@
   @media (min-width: $tablet-width) {
     width: 768px;
     background-color: rgba(255, 255, 255, 1);
-    padding-bottom: 50px;
+    padding-bottom: 180px;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,12 +22,10 @@
   margin: 0 auto;
   padding: 0;
   list-style-type: none;
-
-
 }
 
 .hero-list__item {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: column;
@@ -47,6 +45,10 @@
 
   &:nth-of-type(3) {
     background-color: rgba(229, 230, 232, 1);
+  }
+
+  &--active {
+    display: flex;
   }
 }
 
@@ -124,6 +126,7 @@
   background-color: transparent;
   border-radius: none;
   border: none;
+  cursor: pointer;
 }
 
 .slider-next {
@@ -146,8 +149,15 @@
   }
 
   &:disabled {
-    background-color: rgba(226, 226, 226, 1);//как правильно красить иконки
-    color: rgba(255, 255, 255, 1);
+    background-color: transparent;
+
+    & svg {
+      opacity: 0.2;
+    }
+
+    &:hover {
+      background-color: transparent;
+    }
   }
 }
 
@@ -169,8 +179,15 @@
   }
 
   &:disabled {
-    background-color: rgba(226, 226, 226, 1);//как правильно красить иконки
-    color: rgba(255, 255, 255, 1);
+    background-color: transparent;
+
+    & svg {
+      opacity: 0.2;
+    }
+
+    &:hover {
+      background-color: transparent;
+    }
   }
 }
 
@@ -258,12 +275,16 @@
   .hero-list__item {
     position: static;
     width: 1440px;
-    display: grid;
+    display: none;
     grid-template-columns: repeat(3, 60px 600px 625px);
     grid-template-rows: 187px 97px 138px;
     grid-column-gap: 30px;
     padding-bottom: 0;
     padding-top: 0;
+
+    &--active {
+      display: grid;
+    }
   }
 
   .hero-list__image {
