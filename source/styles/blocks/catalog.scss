@@ -119,7 +119,7 @@
   }
 
   .catalog-flag {
-    padding-top: 220px;
+    padding-top: 100px;
   }
 
   .catalog-title {
@@ -127,6 +127,7 @@
   }
 
   .catalog-wrapper {
+    margin: 0 auto;
     width: 1360px;
     display: grid;
     grid-template-columns: 318px 1011px;

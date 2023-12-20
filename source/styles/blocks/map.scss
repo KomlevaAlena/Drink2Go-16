@@ -30,6 +30,10 @@
       left: 374px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }
 
 .map-image {
@@ -39,5 +43,9 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
   }
 }
