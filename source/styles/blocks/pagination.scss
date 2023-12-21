@@ -4,7 +4,7 @@
   justify-content: space-between;
   margin: 0 auto;
   padding: 0;
-  width: 280px;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
     width: 728px;
@@ -23,9 +23,10 @@
   justify-content: flex-start;
   margin: 0 auto;
   padding: 0;
-  width: 280px;
+  width: 320px;
   list-style-type: none;
-  padding-top: 40px;
+  padding-top: 28px;
+
 
   &-link {
     @include button;
@@ -36,7 +37,7 @@
     font-size: 16px;
     line-height: 24px;
     width: 40px;
-    margin-left: 20px;
+    margin-right: 20px;
   }
 
   &-link__before {
@@ -45,6 +46,7 @@
     background-position: center;
     background-repeat: no-repeat;
     padding: 20px 10px;
+    margin-left: 20px;
   }
 
   &-link__after {
