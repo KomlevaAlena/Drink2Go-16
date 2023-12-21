@@ -10,7 +10,7 @@
 
 .catalog-flag {
   @include flag;
-  padding-top: 50px;
+  padding-top: 37px;
 }
 
 .catalog-title {
@@ -34,19 +34,23 @@
 
 .catalog-filter {
   &__range {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    padding-left: 14px;
+    border: none;
+    width: 280px;
+  }
+
+  &__radio {
     margin: 0 auto;
     padding: 0;
     border: none;
     width: 280px;
   }
 
-  &__radio {
-    padding: 0;
-    border: none;
-    width: 280px;
-  }
-
   &__checkbox {
+    margin: 0 auto;
     padding: 0;
     border: none;
     width: 280px;
@@ -55,6 +59,7 @@
 
   &__button-group {
     width: 280px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

@@ -59,13 +59,14 @@
     mask-size: 16px 16px;
     mask-position: center;
     background-color: rgba(51, 51, 51, 1);
-    top: 22px;
-    left: -2px;
+    top: 14px;
+    left: -9px;
   }
 }
 
 .user-list__link-user {
   display: block;
+
 
   &::before {
     content: "";
@@ -78,10 +79,11 @@
     mask-size: 16px 16px;
     mask-position: center;
     background-color: rgba(51, 51, 51, 1);
-    top: 22px;
-    left: -2px;
+    top: 14px;
+    left: -9px;
   }
 }
+
 
 @media (min-width: $tablet-width) {
   .user-list {

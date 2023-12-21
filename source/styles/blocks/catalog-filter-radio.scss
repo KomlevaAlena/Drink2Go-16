@@ -4,10 +4,15 @@
   padding: 0;
 }
 
+.catalog-filter__title--radio {
+  display: block;
+  padding-top: 20px;
+}
+
 .catalog-filter__input[type="radio"] + .catalog-filter__mark {
   border-radius: 50%;
   position: absolute;
-  top: 18px;
+  top: 20px;
   left: 0;
   width: 22px;
   height: 22px;
@@ -93,8 +98,8 @@
 
 .catalog-filter__input[type="radio"]:checked + .catalog-filter__mark::before {
   position: absolute;
-  top: 2px;
-  left: 2px;
+  top: 0;
+  left: 0;
   width: 18px;
   height: 18px;
   border-radius: 50%;

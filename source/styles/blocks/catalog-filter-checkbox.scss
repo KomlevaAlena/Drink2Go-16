@@ -1,7 +1,12 @@
+.catalog-filter__title--checkbox {
+  display: block;
+  padding-top: 21px;
+}
+
 .catalog-filter__input[type="checkbox"] + .catalog-filter__mark {
   border-radius: 13px;
   position: absolute;
-  top: 18px;
+  top: 20px;
   left: 0;
   width: 40px;
   height: 22px;
@@ -10,8 +15,8 @@
 
   &::before {
     position: absolute;
-    top: 1px;
-    left: 1px;
+    top: -1px;
+    left: 0;
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -104,8 +109,8 @@
 
 .catalog-filter__input[type="checkbox"]:checked + .catalog-filter__mark::before {
   position: absolute;
-  top: 1px;
-  left: 19px;
+  top: -1px;
+  left: 17px;
   width: 20px;
   height: 20px;
   border-radius: 50%;

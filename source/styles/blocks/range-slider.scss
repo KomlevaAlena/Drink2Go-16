@@ -68,9 +68,11 @@
 }
 
 .range-title {
+  display: block;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
+  padding-top: 20px;
 }
 
 .range-field {
@@ -100,15 +102,13 @@
 .range-value {
   &__min {
     @include filed;
-    margin-right: auto;
-    width: 130px;
-    margin-left: -17px;
+    width: 114px;
+    margin-left: -5px;
   }
 
   &__max {
     @include filed;
-    margin-left: auto;
-    width: 130px;
-    margin-right: -17px;
+    width: 114px;
+    margin-right: 10px;
   }
 }

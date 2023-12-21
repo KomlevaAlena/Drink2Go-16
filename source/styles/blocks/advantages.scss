@@ -10,7 +10,7 @@
 
 .advantages-flag {
   @include flag;
-  padding-top: 50px;
+  padding-top: 52px;
 }
 
 .advantages-title {
@@ -24,7 +24,7 @@
   justify-content: space-between;
   flex-direction: column;
   list-style-type: none;
-  width: 280px;
+  width: 312px;
 }
 
 .advantages-item {
@@ -38,7 +38,7 @@
   &:nth-of-type(1) {
     background-image: url("/images/time-advantages.svg");
     background-size: 50px 56px;
-    background-position: center 35%;
+    background-position: 42% 20%;
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
@@ -53,8 +53,9 @@
   &:nth-of-type(2) {
     background-image: url("/images/poket-advantages.svg");
     background-size: 50px 56px;
-    background-position: center 35%;
+    background-position: 42% 19%;
     background-repeat: no-repeat;
+    margin-top: 10px;
 
     @media (min-width: $tablet-width) {
       background-position: left top 0;
@@ -68,8 +69,9 @@
   &:nth-of-type(3) {
     background-image: url("/images/light-advantages.svg");
     background-size: 50px 56px;
-    background-position: center 35%;
+    background-position: 42% 20%;
     background-repeat: no-repeat;
+    margin-top: 10px;
 
     @media (min-width: $tablet-width) {
       background-position: left top 0;
@@ -83,8 +85,9 @@
   &:nth-of-type(4) {
     background-image: url("/images/lives-advantages.svg");
     background-size: 50px 56px;
-    background-position: center 20%;
+    background-position: 42% 13%;
     background-repeat: no-repeat;
+    margin-top: 10px;
 
     @media (min-width: $tablet-width) {
       background-position: left top 0;
@@ -100,16 +103,19 @@
 .advantages-item__title {
   display: block;
   margin: 0 auto;
-  font-weight: 700;//почяему не жирный??
+  margin-right: 35px;
+  font-weight: 700;
   font-size: 18px;
   line-height: 32px;
   text-align: center;
-  padding-top: 98px;
+  padding-top: 88px;
 }
 
 .advantages-description {
   display: block;
   margin: 0 auto;
+  width: 312px;
+  margin-left: -36px;
   text-align: center;
   padding-top: 4px;
 }
