@@ -1,5 +1,5 @@
 .range-slider {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .noUi-target {
@@ -15,6 +15,7 @@
 
 .noUi-horizontal {
   height: 2px;
+  margin-left: 13px;
 }
 
 .noUi-horizontal .noUi-handle {
@@ -36,7 +37,21 @@
   background-image: none;
   border: 2px solid rgba(144, 112, 236, 1);
   top: -13px;
+  cursor: pointer;
+  box-shadow: none;
 
+  &:hover{
+    border: 2px solid rgba(255, 255, 255, 1);
+    background-color: rgba(144, 112, 236, 1);
+  }
+  &:active {
+    outline: 1px solid rgba(144, 112, 236, 1);
+    outline-offset: 2px;
+  }
+  &:focus {
+    outline: 1px solid rgba(144, 112, 236, 1);
+    outline-offset: 2px;
+  }
   &::before {
     display: none;
   }
@@ -65,18 +80,18 @@
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: row;
-  padding-top: 24px;
+  padding-top: 35px;
   padding-bottom: 10px;
   position: relative;
 
   &::after {
     position: absolute;
     display: block;
-    width: 8px;
+    width: 9px;
     height: 2px;
     background-color: rgba(189, 189, 189, 1);
-    top: 44px;
-    left: 136px;
+    top: 52px;
+    left: 135px;
     z-index: 1;
     content: "";
   }
@@ -86,12 +101,14 @@
   &__min {
     @include filed;
     margin-right: auto;
-    width: 98px;
+    width: 130px;
+    margin-left: -17px;
   }
 
   &__max {
     @include filed;
     margin-left: auto;
-    width: 98px;
+    width: 130px;
+    margin-right: -17px;
   }
 }

@@ -37,6 +37,7 @@
 
   &:nth-of-type(1) {
     background-color: rgba(243, 235, 225, 1);
+    padding-top: 30px;
   }
 
   &:nth-of-type(2) {
@@ -81,7 +82,7 @@
 .hero-list__price-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-direction: row;
   align-items: center;
   margin: 0 auto;
@@ -95,7 +96,6 @@
   text-decoration: line-through;
   font-size: 16px;
   line-height: 32px;
-  padding-left: 25px;
 }
 
 .hero-list__new-price {
@@ -113,6 +113,9 @@
 
 .hero-list__button {
   text-transform: none;
+  margin-left: 24px;
+  padding: 8px 20px;
+  letter-spacing: 1px;
 }
 
 .hero-button {
@@ -269,6 +272,7 @@
       display: block;
       grid-column: 2/3;
       grid-row: 1/5;
+      margin-left: 15px;
     }
   }
 
@@ -276,7 +280,7 @@
     position: static;
     width: 1440px;
     display: none;
-    grid-template-columns: repeat(3, 60px 600px 625px);
+    grid-template-columns: 57px 619px 705px;
     grid-template-rows: 187px 97px 138px;
     grid-column-gap: 30px;
     padding-bottom: 0;
@@ -292,7 +296,7 @@
     display: block;
     margin: 0 auto;
     width: 600px;
-    height: 600px;
+    height: 684px;
     padding-bottom: 84px;
   }
 
@@ -302,7 +306,7 @@
     padding: 0;
     margin: 0;
     margin-right: auto;
-    margin-top: 180px;
+    margin-top: 130px;
   }
 
   .hero-list__label {
@@ -310,6 +314,7 @@
     grid-row: 2/3;
     padding: 0;
     margin: 0;
+    margin-top: -15px;
     margin-right: auto;
     margin-bottom: auto;
     text-align: start;
@@ -321,6 +326,7 @@
     grid-row: 3/4;
     padding: 0;
     margin: 0;
+    margin-top: -17px;
     margin-right: auto;
     margin-bottom: auto;
     text-align: start;
@@ -332,6 +338,7 @@
     grid-row: 4/5;
     padding: 0;
     margin: 0;
+    margin-top: -17px;
     margin-right: auto;
     margin-bottom: auto;
     text-align: start;
@@ -346,8 +353,8 @@
     align-items: center;
     list-style-type: none;
     padding: 0;
-    bottom: 60px;
-    left: 585px;
+    bottom: 53px;
+    left: 614px;
   }
 
   .hero-pagination__button {
@@ -358,7 +365,7 @@
     background-color: rgba(255, 255, 255, 1);
     width: 64px;
     height: 4px;
-    margin: 8px;
+    margin: 3px;
 
     &-active {
       background-color: rgba(120, 89, 207, 1);
@@ -366,10 +373,10 @@
   }
 
   .slider-next {
-    height: 686px;
+    height: 714px;
   }
 
   .slider-prev {
-    height: 686px;
+    height: 714px;
   }
 }

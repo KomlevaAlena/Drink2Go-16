@@ -29,3 +29,9 @@ $mobile-width-only: 767px;
   justify-content: space-between;
   width: 320px;
 }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}

@@ -29,7 +29,7 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
-  padding-top: 20px;
+  margin-left: -3px;
 }
 
 .catalog-filter {
@@ -41,21 +41,19 @@
   }
 
   &__radio {
-    margin: 0 auto;
     padding: 0;
     border: none;
     width: 280px;
   }
 
   &__checkbox {
-    margin: 0 auto;
     padding: 0;
     border: none;
     width: 280px;
+    margin-top: 10px;
   }
 
   &__button-group {
-    margin: 0 auto;
     width: 280px;
     display: flex;
     flex-wrap: wrap;
@@ -96,11 +94,11 @@
   }
 
   .catalog-filter__range {
-    width: 223px;
+    width: 100%;
   }
 
   .catalog-filter__button-group {
-    width: 277px;
+    width: 100%;
     flex-direction: row;
     margin: 0 auto;
     grid-column: 1 / 4;
@@ -108,8 +106,9 @@
   }
 
   .catalog-filter__button {
-    margin: 0 auto;
     padding: 8px 20px;
+    margin-top: 8px;
+    width: 149px;
   }
 }
 
@@ -119,7 +118,7 @@
   }
 
   .catalog-flag {
-    padding-top: 100px;
+    padding-top: 96px;
   }
 
   .catalog-title {
@@ -144,6 +143,7 @@
     flex-wrap: wrap;
     justify-content: start;
     flex-direction: column;
+    padding-top: 40px;
   }
 
   .catalog-select__wrapper {

@@ -71,13 +71,14 @@
   }
 
   .site-list__item {
-    max-width: 130px;
+    max-width: 113px;
     border: none;
+    margin-right: 10px;
   }
 
   .site-list__link {
     padding-top: 32px;
-    padding-bottom: 36px;
+    padding-bottom: 30px;
 
     &--active {
       border-bottom: 2px solid rgba(120, 89, 207, 1);
@@ -87,7 +88,7 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    margin-left: 162px;
+    margin-left: 148px;
     margin-right: 162px;
   }
 }

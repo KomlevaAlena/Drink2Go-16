@@ -23,9 +23,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: column;
-  margin: 0 auto;
-  padding: 0;
-  padding-top: 4px;
   list-style-type: none;
   width: 280px;
 }
@@ -38,7 +35,7 @@
     padding-bottom: 60px;
   }
 
-  &:nth-of-type(1) {//невидно неверный путь?
+  &:nth-of-type(1) {
     background-image: url("/images/time-advantages.svg");
     background-size: 50px 56px;
     background-position: center 35%;
@@ -49,7 +46,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      background-position: center top 0;
+      background-position: 56% top;
     }
   }
 
@@ -64,7 +61,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      background-position: center top 0;
+      background-position: 52% top;
     }
   }
 
@@ -79,7 +76,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      background-position: center top 0;
+      background-position: 48% top;
     }
   }
 
@@ -94,7 +91,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      background-position: center top 0;
+      background-position: 44% top;
       padding-bottom: 0;
     }
   }
@@ -128,7 +125,7 @@
 
   .advantages-list {
     width: 728px;
-    padding-top: 60px;
+    padding-top: 67px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -171,24 +168,58 @@
   }
 
   .advantages-list {
-    width: 1320px;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 300px);
-    grid-template-rows: repeat(1, auto);
-    grid-column-gap: 30px;
-    padding-bottom: 120px;
-  }
-
-  .advantages-item {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding-bottom: 102px;
     padding-left: 0;
-    padding-top: 76px;
   }
 
   .advantages-item__title {
     text-align: center;
+    width: 100%;
+    letter-spacing: 1px;
   }
 
   .advantages-description {
     text-align: center;
+    width: 100%;
+    margin: 7px;
+    margin-left: 20px;
+  }
+
+  .advantages-item {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 76px;
+
+    &:nth-child(1) .advantages-item__title {
+      margin-left: 19px;
+    }
+
+    &:nth-child(2) .advantages-item__title {
+      margin-left: 8px;
+    }
+
+    &:nth-child(3) .advantages-item__title {
+      margin-left: -6px;
+    }
+
+    &:nth-child(4) .advantages-item__title {
+      margin-left: -18px;
+    }
+
+    &:nth-child(2) .advantages-description {
+      margin-left: 7px;
+    }
+
+    &:nth-child(3) .advantages-description {
+      margin-left: -6px;
+    }
+
+    &:nth-child(4) .advantages-description {
+      margin-left: -18px;
+    }
   }
 }

@@ -59,8 +59,8 @@
     mask-size: 16px 16px;
     mask-position: center;
     background-color: rgba(51, 51, 51, 1);
-    top: 20px;
-    left: 0;
+    top: 22px;
+    left: -2px;
   }
 }
 
@@ -78,8 +78,8 @@
     mask-size: 16px 16px;
     mask-position: center;
     background-color: rgba(51, 51, 51, 1);
-    top: 20px;
-    left: 0;
+    top: 22px;
+    left: -2px;
   }
 }
 
@@ -104,18 +104,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 48px;
+    width: 95px;
+    margin-left: -8px;
 
     &:hover {
-      background-color: rgba(120, 89, 207, 1);
+      color: rgba(120, 89, 207, 1);
     }
 
     &:focus {
-      background-color: rgba(120, 89, 207, 1);
+      color: rgba(120, 89, 207, 1);
     }
 
     &:active {
-      background-color: rgba(120, 89, 207, 1);
+      color: rgba(120, 89, 207, 1);
     }
 
     &:disabled {
@@ -125,6 +126,8 @@
   }
 
   .user-list__link-basket {
+    margin-left: 40px;
+
     &::before {
       content: "";
     }

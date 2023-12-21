@@ -41,9 +41,9 @@
   }
 
   &:focus {
-    border-color: rgba(120, 89, 207, 1);
+    border: 2px solid rgba(120, 89, 207, 1);
 
-    &::before {
+    & + .catalog-filter__mark::before {
       position: absolute;
       top: 2px;
       left: 2px;

@@ -3,7 +3,7 @@
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -71,24 +71,24 @@
     background-image: url("/images/logo-full.svg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 32px;
-    width: 170px;
+    height: 36px;
+    width: 176px;
     order: -2;
     margin-top: 22px;
-    margin-left: 40px;
+    margin-left: 36px;
     margin-right: 0;
     padding-left: 10px;
   }
 
   .main-nav__logo-text {
     display: block;
-    margin-top: 22px;
-    padding-left: 10px;
+    margin-top: 23px;
+    padding-left: 18px;
     margin-left: 0;
-    width: 132px;
+    width: 153px;
     font-size: 12px;
     font-weight: 400;
-    line-height: 16px;
+    line-height: 17px;
     order: -1;
   }
 }

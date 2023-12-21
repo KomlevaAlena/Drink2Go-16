@@ -37,12 +37,12 @@
 .product-title {
   @include title_h3;
   width: 240px;
-  padding-top: 24px;
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
     width: 289px;
     font-size: 24px;
-    line-height: 36px;
+    line-height: 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,7 +54,7 @@
   display: block;
   margin: 0 auto;
   width: 240px;
-  padding-top: 4px;
+  padding-top: 7px;
 
   @media (min-width: $tablet-width) {
     width: 289px;
@@ -70,8 +70,8 @@
 .product-price__wrapper {
   margin: 0 auto;
   width: 240px;
-  padding-top: 16px;
-  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 33px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -93,14 +93,14 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 32px;
+  padding-top: 2px;
 }
 
 .product-card-button {
-  width: 75px;
+  width: 141px;
   margin-left: auto;
   text-transform: none;
-  text-align: center;
-  padding-left: 46px;
+  text-align: right;
   background-image: url("/images/basket-button.svg");
   background-size: 20px 16px;
   background-repeat: no-repeat;
