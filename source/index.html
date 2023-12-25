@@ -15,7 +15,7 @@
 
   </head>
   <body class="page-body">
-    <header class="main-header">
+    <header class="main-header" data-test="header">
       <nav class="main-nav">
         <a class="main-nav__logo" href="index.html">
           <span class="visually-hidden">Логотип Drink to Go.</span>
@@ -33,7 +33,7 @@
             </a>
           </li>
         </ul>
-        <button class="main-nav__toggle mobile-nav mobile-nav--nojs" type="button">
+        <button class="main-nav__toggle mobile-nav mobile-nav--nojs js-toggle-button" type="button">
           <span class="mobile-nav__icon"></span>
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -56,22 +56,22 @@
     <main class="main-container">
       <!--основное содержимое -->
       <h1 class="visually-hidden">Интернет-магазин кофейных напитков Drink to Go</h1>
-      <section class="hero">
+      <section class="hero" data-test="hero">
         <h2 class="visually-hidden">Новинки</h2>
         <!--Слайдер -->
-        <button class="hero-button slider-prev" type="button">
+        <button class="hero-button slider-prev slider-button-prev" type="button">
           <span class="visually-hidden">Предыдущее фото</span>
           <svg class="hero-button__icon" width="11" height="20" viewBox="0 0 11 20" fill="white" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="images/icons/stack.svg#arrow-left"></use>
           </svg>
         </button>
-        <button class="hero-button slider-next" type="button">
+        <button class="hero-button slider-next slider-button-next" type="button">
           <span class="visually-hidden">Следующее фото</span>
           <svg class="hero-button__icon" width="11" height="20" viewBox="0 0 11 20" fill="white" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="images/icons/stack.svg#arrow-right"></use>
           </svg>
         </button>
-        <ol class="hero-pagination">
+        <ol class="hero-pagination slider-pagination">
           <li class="hero-pagination__item">
             <button class="hero-pagination__button hero-pagination__button-active" type="button">
               <span class="visually-hidden">Товар 1</span>
@@ -152,7 +152,7 @@
           </li>
         </ol>
       </section>
-      <section class="advantages">
+      <section class="advantages" data-test="features">
         <span class="advantages-flag">Преимущества</span>
         <h2 class="advantages-title">Главные причины выбрать Drink2Go</h2>
         <!--приимущества -->
@@ -175,7 +175,7 @@
           </li>
         </ul>
       </section>
-      <section class="catalog">
+      <section class="catalog" data-test="catalog">
         <span class="catalog-flag">Каталог</span>
         <h2 class="catalog-title">Каталог кофейных напитков</h2>
         <div class="catalog-wrapper"><form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
@@ -393,7 +393,7 @@
         </ul>
         </div>
       </section>
-      <section class="map">
+      <section class="map" data-test="map">
         <h2 class="visually-hidden">Расположение на карте.</h2>
         <picture>
           <source media="(min-width: 1200px)" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x">
@@ -403,7 +403,7 @@
       </section>
 
     </main>
-    <footer class="footer">
+    <footer class="footer" data-test="footer">
       <h2 class="visually-hidden">Контактная информация.</h2>
       <ul class="footer-list social-list">
         <li class="social-list__item">
